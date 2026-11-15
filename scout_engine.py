@@ -126,20 +126,32 @@ def parse_node(url_str):
     parts = clean.split(":")
     return proto, parts[0], int(parts[1])
 
-# Tahap 1: Tes TCP Connect Nyata
+# Tahap 1: Tes TCP Connect & Transmisi Payload Nyata
 def test_tcp_alive(cand):
     try:
         proto, host, port = parse_node(cand)
         if host.startswith("10.") or host.startswith("192.168.") or host.startswith("127."):
             return None
+        
+        # 1. Cek port connect
         t0 = time.time()
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(2.0)
         res = s.connect_ex((host, port))
         s.close()
-        if res == 0:
-            dt = round(time.time() - t0, 2)
-            return (cand, host, port, proto, dt)
+        if res != 0:
+            return None
+            
+        # 2. Uji transmisi HTTP payload nyata (kecepatan & anti-blokir)
+        handler = urllib.request.ProxyHandler({'http': cand, 'https': cand})
+        opener = urllib.request.build_opener(handler)
+        opener.addheaders = [('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)')]
+        t1 = time.time()
+        with opener.open('http://cloudflare.com/cdn-cgi/trace', timeout=2.5) as r_http:
+            content = r_http.read().decode('utf-8', errors='ignore')
+            if 'colo=' in content or 'ip=' in content:
+                dt = round(time.time() - t1, 2)
+                return (cand, host, port, proto, dt)
     except Exception:
         pass
     return None
