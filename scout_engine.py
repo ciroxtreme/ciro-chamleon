@@ -6,10 +6,19 @@ import concurrent.futures
 import os
 import sys
 
+try:
+    import socks
+    from sockshandler import SocksiPyHandler
+    HAS_SOCKS = True
+except ImportError:
+    HAS_SOCKS = False
+
 VAULT_FILE = "residential_vault.txt"
 JSON_VAULT_FILE = "residential_vault.json"
 
 print("🦎 [CIRO CHAMLEON - MASS SCANNER ULTRA] Mengunduh dari Seluruh Repo Dunia...")
+if HAS_SOCKS:
+    print("⚡ Dukungan SOCKS4 & SOCKS5 aktif (via PySocks)!")
 
 # 35+ SUMBER REPO PROXY DUNIA (TERMASUK ROOSTERKID & CASPER-TECH)
 SOURCES_TXT = [
@@ -142,11 +151,21 @@ def test_tcp_alive(cand):
         if res != 0:
             return None
             
-        # 2. Uji transmisi HTTP payload nyata (kecepatan & anti-blokir)
-        handler = urllib.request.ProxyHandler({'http': cand, 'https': cand})
-        opener = urllib.request.build_opener(handler)
-        opener.addheaders = [('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)')]
+        # 2. Uji transmisi payload nyata ke Cloudflare trace (kecepatan & anti-blokir)
         t1 = time.time()
+        if proto == "socks5":
+            if not HAS_SOCKS:
+                return None
+            opener = urllib.request.build_opener(SocksiPyHandler(socks.SOCKS5, host, port))
+        elif proto == "socks4":
+            if not HAS_SOCKS:
+                return None
+            opener = urllib.request.build_opener(SocksiPyHandler(socks.SOCKS4, host, port))
+        else:
+            handler = urllib.request.ProxyHandler({'http': cand, 'https': cand})
+            opener = urllib.request.build_opener(handler)
+
+        opener.addheaders = [('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)')]
         with opener.open('http://cloudflare.com/cdn-cgi/trace', timeout=2.5) as r_http:
             content = r_http.read().decode('utf-8', errors='ignore')
             if 'colo=' in content or 'ip=' in content:

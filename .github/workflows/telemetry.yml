@@ -25,10 +25,14 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install Network & SOCKS Dependencies
+        run: |
+          pip install --quiet PySocks urllib3
+
       - name: Run Selected Engine
         run: |
           if [ "${{ github.event.inputs.action }}" = "retest" ]; then
-            echo "🩺 Menjalankan Re-test Engine..."
+            echo "🩺 Menjalankan Re-test Engine (Multi-Protocol HTTP/SOCKS)..."
             python retest_engine.py
           else
             echo "🦎 Menjalankan Mass Telemetry Scanner..."
