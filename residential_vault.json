@@ -339,5 +339,55 @@
     "latency": 3.14,
     "added_at": "2026-11-15 02:15:33 UTC",
     "last_tested": "2026-11-15 13:08:54 UTC"
+  },
+  {
+    "proxy": "http://180.191.137.111:8082",
+    "host": "180.191.137.111",
+    "port": 8082,
+    "country": "Philippines",
+    "isp": "Globe Telecom",
+    "mobile": false,
+    "latency": 1.66,
+    "added_at": "2026-11-15 19:22:54 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.38:80",
+    "host": "193.255.128.38",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.53,
+    "added_at": "2026-11-15 19:22:54 UTC"
+  },
+  {
+    "proxy": "http://103.180.127.116:8080",
+    "host": "103.180.127.116",
+    "port": 8080,
+    "country": "Indonesia",
+    "isp": "PT Alam Media Data",
+    "mobile": false,
+    "latency": 0.58,
+    "added_at": "2026-11-15 19:22:54 UTC"
+  },
+  {
+    "proxy": "http://45.194.41.155:8080",
+    "host": "45.194.41.155",
+    "port": 8080,
+    "country": "India",
+    "isp": "Real Time Data Services Private Limited",
+    "mobile": false,
+    "latency": 0.49,
+    "added_at": "2026-11-15 19:22:54 UTC"
+  },
+  {
+    "proxy": "http://12.50.107.221:80",
+    "host": "12.50.107.221",
+    "port": 80,
+    "country": "United States",
+    "isp": "AT&T Enterprises, LLC",
+    "mobile": false,
+    "latency": 0.22,
+    "added_at": "2026-11-15 19:22:54 UTC"
   }
 ]

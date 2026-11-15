@@ -1,8 +1,7 @@
 # ========================================================
-# CIRO CHAMLEON - HIGH PERFORMANCE RESIDENTIAL VAULT
-# Total Bersih & Teruji Beban Nyata: 31 Proxies
-# Terakhir Diuji Ulang: 2026-11-15 13:08:57 UTC
-# Diurutkan dari yang Paling Kencang & Responsif (< 2.5s)
+# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)
+# Total Akumulasi: 36 Proxies Unik (Anti-Duplikat)
+# Terakhir Diperbarui: 2026-11-15 19:23:57 UTC
 # ========================================================
 
 http://12.50.107.217:80 # [United States] AT&T Enterprises, LLC (0.12s)
@@ -36,3 +35,8 @@ http://185.153.231.35:3128 # [Turkey] SAHINNETWORK (2.44s)
 http://95.31.215.191:2080 # [Russia] CORBINA-BROADBAND (2.46s)
 http://197.221.240.178:80 # [Zimbabwe] Telone PVT Ltd (2.63s)
 http://121.46.226.221:10808 # [China] ZHAOONE (3.14s)
+http://180.191.137.111:8082 # [Philippines] Globe Telecom (1.66s)
+http://193.255.128.38:80 # [Türkiye] National Academic Network and Information Center (0.53s)
+http://103.180.127.116:8080 # [Indonesia] PT Alam Media Data (0.58s)
+http://45.194.41.155:8080 # [India] Real Time Data Services Private Limited (0.49s)
+http://12.50.107.221:80 # [United States] AT&T Enterprises, LLC (0.22s)
