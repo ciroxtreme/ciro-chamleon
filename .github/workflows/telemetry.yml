@@ -2,15 +2,19 @@ name: Ciro Chamleon Telemetry Pipeline
 
 on:
   schedule:
-    # Berjalan otomatis setiap 3 jam untuk menyerap IP-IP gratisan baru yang baru rilis
     - cron: '0 */3 * * *'
   workflow_dispatch:
+    inputs:
+      action:
+        description: 'Pilih aksi: scan (tambah baru) atau retest (uji & bersihkan brankas)'
+        required: false
+        default: 'scan'
 
 permissions:
   contents: write
 
 jobs:
-  benchmark:
+  telemetry:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -21,14 +25,20 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Mass Telemetry Scanner
+      - name: Run Selected Engine
         run: |
-          python scout_engine.py
+          if [ "${{ github.event.inputs.action }}" = "retest" ]; then
+            echo "🩺 Menjalankan Re-test Engine..."
+            python retest_engine.py
+          else
+            echo "🦎 Menjalankan Mass Telemetry Scanner..."
+            python scout_engine.py
+          fi
 
-      - name: Commit & Accumulate to Storage
+      - name: Commit & Push Changes
         run: |
           git config --global user.name "Ciro Chamleon Bot"
           git config --global user.email "chamleon@ciroxtreme.internal"
           git add residential_vault.txt residential_vault.json || true
-          git commit -m "chore: accumulate verified residential proxies [skip ci]" || true
+          git commit -m "chore: telemetry synchronization [skip ci]" || true
           git push origin main || true
