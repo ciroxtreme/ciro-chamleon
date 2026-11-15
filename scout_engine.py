@@ -6,12 +6,12 @@ import concurrent.futures
 import os
 import sys
 
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "DUMMY_TELEGRAM_TOKEN_PROTECTED")
-CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "1936436999")
-TARGET_COUNT = int(os.environ.get("TARGET_COUNT", "60"))
+VAULT_FILE = "residential_vault.txt"
+JSON_VAULT_FILE = "residential_vault.json"
 
-print("🦎 [CIRO CHAMLEON RADAR] Inisialisasi Penarikan Data Jaringan...")
+print("🦎 [CIRO CHAMLEON - MASS SCANNER] Memulai Scanning Skala Besar...")
 
+# Sumber Massal
 SOURCES = [
     # Solproxy
     "https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/all.txt",
@@ -32,32 +32,22 @@ DC_KEYWORDS = [
     "choopa", "m247", "leaseweb", "contabo", "oracle", "microsoft", "azure"
 ]
 
-def send_telegram_doc(filename, filepath, caption):
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument"
-    boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
-    
-    with open(filepath, "rb") as f:
-        file_bytes = f.read()
-        
-    body = bytearray()
-    # chat_id
-    body.extend(f"--{boundary}\r\nContent-Disposition: form-data; name=\"chat_id\"\r\n\r\n{CHAT_ID}\r\n".encode())
-    # caption
-    body.extend(f"--{boundary}\r\nContent-Disposition: form-data; name=\"caption\"\r\n\r\n{caption}\r\n".encode())
-    # file
-    body.extend(f"--{boundary}\r\nContent-Disposition: form-data; name=\"document\"; filename=\"{filename}\"\r\nContent-Type: text/plain\r\n\r\n".encode())
-    body.extend(file_bytes)
-    body.extend(f"\r\n--{boundary}--\r\n".encode())
-    
-    req = urllib.request.Request(url, data=body)
-    req.add_header("Content-Type", f"multipart/form-data; boundary={boundary}")
-    try:
-        with urllib.request.urlopen(req, timeout=15) as r:
-            print("📤 Dokumen berhasil terkirim ke Telegram Tuan Ciro! Status:", r.status)
-    except Exception as e:
-        print("❌ Gagal kirim Telegram:", e)
+# 1. BACA PENYIMPANAN BRANKAS YANG SUDAH ADA (ANTI-DUPLIKAT)
+existing_proxies = set()
+existing_data = []
 
-# 1. Unduh Semua Sumber
+if os.path.exists(JSON_VAULT_FILE):
+    try:
+        with open(JSON_VAULT_FILE, "r") as f:
+            existing_data = json.load(f)
+            for item in existing_data:
+                existing_proxies.add(item.get("proxy"))
+    except Exception as e:
+        print("Warning read json vault:", e)
+
+print(f"🏦 [PENYIMPANAN SAAT INI] Sudah tersimpan {len(existing_proxies)} proxy unik di brankas.")
+
+# 2. AMBIL SEMUA PROXY DARI SELURUH SUMBER SEKALIGUS
 raw_candidates = set()
 for s in SOURCES:
     try:
@@ -69,11 +59,13 @@ for s in SOURCES:
                 if l and not l.startswith("#"):
                     if "://" not in l:
                         l = "http://" + l
-                    raw_candidates.add(l)
+                    # Buang yang sudah ada di brankas agar tidak boros waktu
+                    if l not in existing_proxies:
+                        raw_candidates.add(l)
     except Exception as e:
         print(f"Warning fetch {s}: {e}")
 
-print(f"📦 Terkumpul {len(raw_candidates)} node mentah. Mulai penyaringan ganda...")
+print(f"📦 Total target baru yang belum ada di brankas: {len(raw_candidates)} node.")
 
 def parse_node(url_str):
     proto = "http"
@@ -83,7 +75,7 @@ def parse_node(url_str):
     parts = clean.split(":")
     return proto, parts[0], int(parts[1])
 
-# Tahap 1: Tes TCP Connect Nyata
+# Tahap 1: Tes TCP Connect Nyata Cepat
 def test_tcp_alive(cand):
     try:
         proto, host, port = parse_node(cand)
@@ -91,7 +83,7 @@ def test_tcp_alive(cand):
             return None
         t0 = time.time()
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.settimeout(2.5)
+        s.settimeout(2.0)
         res = s.connect_ex((host, port))
         s.close()
         if res == 0:
@@ -101,13 +93,13 @@ def test_tcp_alive(cand):
         pass
     return None
 
-import random
-sample_pool = random.sample(list(raw_candidates), min(1200, len(raw_candidates)))
-print(f"⚡ [Tahap 1] Menguji TCP handshake pada {len(sample_pool)} kandidat dengan 120 thread...")
+# PINDAI SEMUA SEKALIGUS dengan 200 Thread Paralel
+all_pool = list(raw_candidates)
+print(f"⚡ [Tahap 1] Memindai {len(all_pool)} kandidat sekaligus dengan 200 THREAD PARALEL...")
 
 live_nodes = []
-with concurrent.futures.ThreadPoolExecutor(max_workers=120) as executor:
-    results = executor.map(test_tcp_alive, sample_pool)
+with concurrent.futures.ThreadPoolExecutor(max_workers=200) as executor:
+    results = executor.map(test_tcp_alive, all_pool)
     for r in results:
         if r:
             live_nodes.append(r)
@@ -142,43 +134,46 @@ def check_asn(node_item):
                     "country": data.get("country"),
                     "isp": data.get("isp"),
                     "mobile": data.get("mobile"),
-                    "latency": latency
+                    "latency": latency,
+                    "added_at": time.strftime("%Y-%m-%d %H:%M:%S UTC")
                 }
     except Exception:
         pass
     return None
 
 print(f"🔍 [Tahap 2] Memverifikasi ASN Residential ISP...")
-residential_winners = []
-with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
+newly_found = []
+with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
     results = executor.map(check_asn, live_nodes)
     for r in results:
         if r:
-            residential_winners.append(r)
-            print(f"💎 [{len(residential_winners)}] {r['proxy']} | {r['country']} | {r['isp']} | {r['latency']}s")
-            if len(residential_winners) >= TARGET_COUNT:
-                break
+            newly_found.append(r)
+            print(f"💎 [BARU!] {r['proxy']} | {r['country']} | {r['isp']} | {r['latency']}s")
 
-print(f"\n🏆 SELESAI! Ditemukan {len(residential_winners)} IP Residential murni & hidup.")
+print(f"\n🎉 HASIL PUTARAN INI:")
+print(f"• Node Baru Ditemukan: {len(newly_found)}")
 
-# Simpan ke file teks rapi
-out_file = "ciro_residential_nodes.txt"
-with open(out_file, "w") as f:
+# 3. GABUNGKAN KE PENYIMPANAN LAMA (AKUMULASI ANTI-DUPLIKAT)
+for item in newly_found:
+    if item["proxy"] not in existing_proxies:
+        existing_data.append(item)
+        existing_proxies.add(item["proxy"])
+
+total_saved = len(existing_data)
+print(f"🏦 TOTAL TABUNGAN DI PENYIMPANAN SAAT INI: {total_saved} PROXY RESIDENTIAL!")
+
+# Simpan ke JSON Vault
+with open(JSON_VAULT_FILE, "w") as f:
+    json.dump(existing_data, f, indent=2)
+
+# Simpan ke TXT Vault (Format Siap Pakai)
+with open(VAULT_FILE, "w") as f:
     f.write(f"# ========================================================\n")
-    f.write(f"# CIRO CHAMLEON - RESIDENTIAL VERIFIED NODES\n")
-    f.write(f"# Total: {len(residential_winners)} Nodes Aktif Terverifikasi\n")
-    f.write(f"# Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S UTC')}\n")
+    f.write(f"# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE\n")
+    f.write(f"# Total Akumulasi: {total_saved} Proxies Unik (Anti-Duplikat)\n")
+    f.write(f"# Terakhir Diperbarui: {time.strftime('%Y-%m-%d %H:%M:%S UTC')}\n")
     f.write(f"# ========================================================\n\n")
-    for r in residential_winners:
-        f.write(f"{r['proxy']} # [{r['country']}] {r['isp']} ({r['latency']}s)\n")
+    for r in existing_data:
+        f.write(f"{r['proxy']} # [{r.get('country')}] {r.get('isp')} ({r.get('latency')}s)\n")
 
-# Kirim ke Telegram Tuan Ciro
-caption = f"🦎 **CIRO CHAMLEON PANEN HASIL!**\n\n" \
-          f"✅ Berhasil menyaring: **{len(residential_winners)} IP Residential Hidup!**\n" \
-          f"⚡ Semua lolos uji TCP Handshake + verifikasi ISP Rumahan murni.\n" \
-          f"📦 File dokumen terlampir siap pakai untuk scraping!"
-
-if residential_winners:
-    send_telegram_doc(out_file, out_file, caption)
-else:
-    print("Zero residential found in current run.")
+print(f"💾 File {VAULT_FILE} & {JSON_VAULT_FILE} berhasil diperbarui di repositori!")

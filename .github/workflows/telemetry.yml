@@ -2,14 +2,12 @@ name: Ciro Chamleon Telemetry Pipeline
 
 on:
   schedule:
-    # Berjalan otomatis setiap 2 jam
-    - cron: '0 */2 * * *'
+    # Berjalan otomatis setiap 3 jam untuk menyerap IP-IP gratisan baru yang baru rilis
+    - cron: '0 */3 * * *'
   workflow_dispatch:
-    inputs:
-      target_count:
-        description: 'Target jumlah proxy residential'
-        required: false
-        default: '60'
+
+permissions:
+  contents: write
 
 jobs:
   benchmark:
@@ -23,18 +21,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run Telemetry Engine
-        env:
-          TELEGRAM_BOT_TOKEN: "DUMMY_TELEGRAM_TOKEN_PROTECTED"
-          TELEGRAM_CHAT_ID: "1936436999"
-          TARGET_COUNT: ${{ github.event.inputs.target_count || '60' }}
+      - name: Run Mass Telemetry Scanner
         run: |
           python scout_engine.py
 
-      - name: Commit & Update Node Feed
+      - name: Commit & Accumulate to Storage
         run: |
           git config --global user.name "Ciro Chamleon Bot"
-          git config --global user.email "bot@ciroxtreme.internal"
-          git add ciro_residential_nodes.txt || true
-          git commit -m "Auto-update verified residential nodes [skip ci]" || true
+          git config --global user.email "chamleon@ciroxtreme.internal"
+          git add residential_vault.txt residential_vault.json || true
+          git commit -m "chore: accumulate verified residential proxies [skip ci]" || true
           git push origin main || true
