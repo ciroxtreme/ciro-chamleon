@@ -9,18 +9,41 @@ import sys
 VAULT_FILE = "residential_vault.txt"
 JSON_VAULT_FILE = "residential_vault.json"
 
-print("🦎 [CIRO CHAMLEON - MASS SCANNER] Memulai Scanning Skala Besar...")
+print("🦎 [CIRO CHAMLEON - MASS SCANNER MEGA] Memulai Penarikan dari Seluruh Sumber Top...")
 
-# Sumber Massal
+# DAFTAR SUMBER LENGKAP & MEGA UPDATE TUAN CIRO
 SOURCES = [
-    # Solproxy
+    # 1. Sumber Baru Rekomendasi Tuan Ciro:
+    "https://raw.githubusercontent.com/claude89757/free_https_proxies/main/https_proxies.txt",
+    "https://raw.githubusercontent.com/claude89757/free_https_proxies/main/isz_https_proxies.txt",
+    "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/All_proxies.txt",
+    "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/http_proxies.txt",
+    "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/socks4_proxies.txt",
+    "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/socks5_proxies.txt",
+    "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/allproxy.txt",
+    "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/http.txt",
+    "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/https.txt",
+    "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/socks4.txt",
+    "https://raw.githubusercontent.com/vmheaven/VMHeaven.io-Free-Proxy-List/main/socks5.txt",
+    "https://raw.githubusercontent.com/proxio-io/proxy-list/main/all.txt",
+    "https://raw.githubusercontent.com/proxio-io/proxy-list/main/http.txt",
+    "https://raw.githubusercontent.com/proxio-io/proxy-list/main/socks5.txt",
+    "https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/telegramProxys.txt",
+    "https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/MostStable/HTTP.txt",
+    "https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/MostStable/SOCKS5.txt",
+    "https://raw.githubusercontent.com/6yyn/free-proxy-list/main/http.txt",
+    "https://raw.githubusercontent.com/6yyn/free-proxy-list/main/https.txt",
+    "https://raw.githubusercontent.com/iplocate/free-proxy-list/main/all-proxies.txt",
+    "https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/all.txt",
+    "https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/http.txt",
+    "https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/socks5.txt",
+
+    # 2. Sumber Inti Sebelumnya:
     "https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/all.txt",
     "https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/http.txt",
-    # ProxyScrape
     "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/http.txt",
     "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/socks5.txt",
     "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/socks4.txt",
-    # Monosans & SpeedX
     "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt",
     "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",
     "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
@@ -47,7 +70,7 @@ if os.path.exists(JSON_VAULT_FILE):
 
 print(f"🏦 [PENYIMPANAN SAAT INI] Sudah tersimpan {len(existing_proxies)} proxy unik di brankas.")
 
-# 2. AMBIL SEMUA PROXY DARI SELURUH SUMBER SEKALIGUS
+# 2. AMBIL SEMUA PROXY DARI SELURUH SUMBER MEGA SEKALIGUS
 raw_candidates = set()
 for s in SOURCES:
     try:
@@ -63,9 +86,9 @@ for s in SOURCES:
                     if l not in existing_proxies:
                         raw_candidates.add(l)
     except Exception as e:
-        print(f"Warning fetch {s}: {e}")
+        pass
 
-print(f"📦 Total target baru yang belum ada di brankas: {len(raw_candidates)} node.")
+print(f"📦 Total target baru dari {len(SOURCES)} sumber: {len(raw_candidates)} node.")
 
 def parse_node(url_str):
     proto = "http"
@@ -93,9 +116,8 @@ def test_tcp_alive(cand):
         pass
     return None
 
-# PINDAI SEMUA SEKALIGUS dengan 200 Thread Paralel
 all_pool = list(raw_candidates)
-print(f"⚡ [Tahap 1] Memindai {len(all_pool)} kandidat sekaligus dengan 200 THREAD PARALEL...")
+print(f"⚡ [Tahap 1] Memindai {len(all_pool)} kandidat baru dengan 200 THREAD PARALEL...")
 
 live_nodes = []
 with concurrent.futures.ThreadPoolExecutor(max_workers=200) as executor:
@@ -162,14 +184,12 @@ for item in newly_found:
 total_saved = len(existing_data)
 print(f"🏦 TOTAL TABUNGAN DI PENYIMPANAN SAAT INI: {total_saved} PROXY RESIDENTIAL!")
 
-# Simpan ke JSON Vault
 with open(JSON_VAULT_FILE, "w") as f:
     json.dump(existing_data, f, indent=2)
 
-# Simpan ke TXT Vault (Format Siap Pakai)
 with open(VAULT_FILE, "w") as f:
     f.write(f"# ========================================================\n")
-    f.write(f"# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE\n")
+    f.write(f"# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (MEGA SOURCES)\n")
     f.write(f"# Total Akumulasi: {total_saved} Proxies Unik (Anti-Duplikat)\n")
     f.write(f"# Terakhir Diperbarui: {time.strftime('%Y-%m-%d %H:%M:%S UTC')}\n")
     f.write(f"# ========================================================\n\n")
