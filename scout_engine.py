@@ -9,11 +9,16 @@ import sys
 VAULT_FILE = "residential_vault.txt"
 JSON_VAULT_FILE = "residential_vault.json"
 
-print("🦎 [CIRO CHAMLEON - MASS SCANNER MEGA] Memulai Penarikan dari Seluruh Sumber Top...")
+print("🦎 [CIRO CHAMLEON - MASS SCANNER ULTRA] Mengunduh dari Seluruh Repo Dunia...")
 
-# DAFTAR SUMBER LENGKAP & MEGA UPDATE TUAN CIRO
-SOURCES = [
-    # 1. Sumber Baru Rekomendasi Tuan Ciro:
+# 35+ SUMBER REPO PROXY DUNIA (TERMASUK ROOSTERKID & CASPER-TECH)
+SOURCES_TXT = [
+    # RoosterKid (Baru)
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt",
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt",
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
+
+    # Rekomendasi Tuan Ciro:
     "https://raw.githubusercontent.com/claude89757/free_https_proxies/main/https_proxies.txt",
     "https://raw.githubusercontent.com/claude89757/free_https_proxies/main/isz_https_proxies.txt",
     "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/main/All_proxies.txt",
@@ -38,7 +43,7 @@ SOURCES = [
     "https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/http.txt",
     "https://raw.githubusercontent.com/FusionProxies/free-proxy-list/main/proxies/socks5.txt",
 
-    # 2. Sumber Inti Sebelumnya:
+    # Repo Utama:
     "https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/all.txt",
     "https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/http.txt",
     "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/http.txt",
@@ -47,6 +52,11 @@ SOURCES = [
     "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt",
     "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",
     "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
+]
+
+SOURCES_JSON = [
+    # Casper-Tech-ke (Baru)
+    "https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/proxies.json"
 ]
 
 DC_KEYWORDS = [
@@ -70,9 +80,11 @@ if os.path.exists(JSON_VAULT_FILE):
 
 print(f"🏦 [PENYIMPANAN SAAT INI] Sudah tersimpan {len(existing_proxies)} proxy unik di brankas.")
 
-# 2. AMBIL SEMUA PROXY DARI SELURUH SUMBER MEGA SEKALIGUS
+# 2. AMBIL SEMUA PROXY BARU
 raw_candidates = set()
-for s in SOURCES:
+
+# A. Unduh sumber TXT
+for s in SOURCES_TXT:
     try:
         req = urllib.request.Request(s, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
@@ -82,13 +94,29 @@ for s in SOURCES:
                 if l and not l.startswith("#"):
                     if "://" not in l:
                         l = "http://" + l
-                    # Buang yang sudah ada di brankas agar tidak boros waktu
                     if l not in existing_proxies:
                         raw_candidates.add(l)
-    except Exception as e:
+    except Exception:
         pass
 
-print(f"📦 Total target baru dari {len(SOURCES)} sumber: {len(raw_candidates)} node.")
+# B. Unduh sumber JSON (Casper-Tech)
+for s in SOURCES_JSON:
+    try:
+        req = urllib.request.Request(s, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            pxs = data.get("proxies", [])
+            for p in pxs:
+                p = p.strip()
+                if p:
+                    if "://" not in p:
+                        p = "http://" + p
+                    if p not in existing_proxies:
+                        raw_candidates.add(p)
+    except Exception:
+        pass
+
+print(f"📦 Total target baru dari 35+ sumber: {len(raw_candidates)} node.")
 
 def parse_node(url_str):
     proto = "http"
@@ -98,7 +126,7 @@ def parse_node(url_str):
     parts = clean.split(":")
     return proto, parts[0], int(parts[1])
 
-# Tahap 1: Tes TCP Connect Nyata Cepat
+# Tahap 1: Tes TCP Connect Nyata
 def test_tcp_alive(cand):
     try:
         proto, host, port = parse_node(cand)
@@ -189,7 +217,7 @@ with open(JSON_VAULT_FILE, "w") as f:
 
 with open(VAULT_FILE, "w") as f:
     f.write(f"# ========================================================\n")
-    f.write(f"# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (MEGA SOURCES)\n")
+    f.write(f"# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)\n")
     f.write(f"# Total Akumulasi: {total_saved} Proxies Unik (Anti-Duplikat)\n")
     f.write(f"# Terakhir Diperbarui: {time.strftime('%Y-%m-%d %H:%M:%S UTC')}\n")
     f.write(f"# ========================================================\n\n")
