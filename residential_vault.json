@@ -1,0 +1,642 @@
+[
+  {
+    "proxy": "http://185.153.231.35:3128",
+    "host": "185.153.231.35",
+    "port": 3128,
+    "country": "Turkey",
+    "isp": "SAHINNETWORK",
+    "mobile": false,
+    "latency": 1.2,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://198.40.90.50:443",
+    "host": "198.40.90.50",
+    "port": 443,
+    "country": "Germany",
+    "isp": "Deutsche Telekom AG",
+    "mobile": false,
+    "latency": 0.13,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://89.124.11.8:443",
+    "host": "89.124.11.8",
+    "port": 443,
+    "country": "Lithuania",
+    "isp": "Sabiedriba ar ierobezotu atbildibu DELSKA Latvia",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://119.40.98.27:8069",
+    "host": "119.40.98.27",
+    "port": 8069,
+    "country": "Mongolia",
+    "isp": "Topica Co., Ltd",
+    "mobile": false,
+    "latency": 0.25,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://107.91.88.6:8443",
+    "host": "107.91.88.6",
+    "port": 8443,
+    "country": "United States",
+    "isp": "AT&T Enterprises, LLC",
+    "mobile": true,
+    "latency": 0.2,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://201.28.86.18:61804",
+    "host": "201.28.86.18",
+    "port": 61804,
+    "country": "Brazil",
+    "isp": "Vivo",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://89.124.8.82:443",
+    "host": "89.124.8.82",
+    "port": 443,
+    "country": "Lithuania",
+    "isp": "Sabiedriba ar ierobezotu atbildibu DELSKA Latvia",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://217.162.8.134:80",
+    "host": "217.162.8.134",
+    "port": 80,
+    "country": "Switzerland",
+    "isp": "UPC Schweiz GmbH",
+    "mobile": false,
+    "latency": 0.12,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://36.111.33.167:13128",
+    "host": "36.111.33.167",
+    "port": 13128,
+    "country": "China",
+    "isp": "CHINANET Guangdong province network",
+    "mobile": false,
+    "latency": 1.25,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://41.220.16.210:80",
+    "host": "41.220.16.210",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.26,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://98.170.57.231:4145",
+    "host": "98.170.57.231",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.26,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks4://177.93.72.82:4153",
+    "host": "177.93.72.82",
+    "port": 4153,
+    "country": "Brazil",
+    "isp": "JR LINK PROVEDOR DE INTERNET VIA RARIO LTDA",
+    "mobile": false,
+    "latency": 1.19,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks4://103.154.47.205:1080",
+    "host": "103.154.47.205",
+    "port": 1080,
+    "country": "Nepal",
+    "isp": "Max Net Solutions Pvt Ltd",
+    "mobile": false,
+    "latency": 0.29,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://31.58.144.19:1080",
+    "host": "31.58.144.19",
+    "port": 1080,
+    "country": "Germany",
+    "isp": "dataforest GmbH",
+    "mobile": false,
+    "latency": 0.12,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://174.75.211.222:4145",
+    "host": "174.75.211.222",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.3,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://38.58.174.85:999",
+    "host": "38.58.174.85",
+    "port": 999,
+    "country": "Mexico",
+    "isp": "Cogent Communications",
+    "mobile": false,
+    "latency": 0.1,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://89.111.30.182:443",
+    "host": "89.111.30.182",
+    "port": 443,
+    "country": "Latvia",
+    "isp": "MYDELSKA-RIX",
+    "mobile": false,
+    "latency": 0.14,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://104.218.199.61:16062",
+    "host": "104.218.199.61",
+    "port": 16062,
+    "country": "United States",
+    "isp": "BraveWay LLC",
+    "mobile": false,
+    "latency": 0.03,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://103.176.96.163:8082",
+    "host": "103.176.96.163",
+    "port": 8082,
+    "country": "Indonesia",
+    "isp": "PT Global Sarana Elektronika",
+    "mobile": false,
+    "latency": 0.22,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://81.180.222.73:443",
+    "host": "81.180.222.73",
+    "port": 443,
+    "country": "Romania",
+    "isp": "Romanian Education Network",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://137.175.22.85:443",
+    "host": "137.175.22.85",
+    "port": 443,
+    "country": "United States",
+    "isp": "PEG TECH INC",
+    "mobile": false,
+    "latency": 0.05,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://183.111.240.139:443",
+    "host": "183.111.240.139",
+    "port": 443,
+    "country": "South Korea",
+    "isp": "Korea Telecom",
+    "mobile": false,
+    "latency": 0.16,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://89.124.8.75:443",
+    "host": "89.124.8.75",
+    "port": 443,
+    "country": "Lithuania",
+    "isp": "Sabiedriba ar ierobezotu atbildibu DELSKA Latvia",
+    "mobile": false,
+    "latency": 0.14,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://125.141.133.49:5566",
+    "host": "125.141.133.49",
+    "port": 5566,
+    "country": "South Korea",
+    "isp": "KORNET",
+    "mobile": false,
+    "latency": 0.16,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://116.101.73.52:1085",
+    "host": "116.101.73.52",
+    "port": 1085,
+    "country": "Vietnam",
+    "isp": "Viettel Group",
+    "mobile": false,
+    "latency": 0.21,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks5://118.179.205.174:2080",
+    "host": "118.179.205.174",
+    "port": 2080,
+    "country": "Bangladesh",
+    "isp": "dhakaCom Limited",
+    "mobile": false,
+    "latency": 1.27,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://89.124.8.85:443",
+    "host": "89.124.8.85",
+    "port": 443,
+    "country": "Lithuania",
+    "isp": "Sabiedriba ar ierobezotu atbildibu DELSKA Latvia",
+    "mobile": false,
+    "latency": 0.14,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://72.207.33.64:4145",
+    "host": "72.207.33.64",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.27,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://79.133.217.232:443",
+    "host": "79.133.217.232",
+    "port": 443,
+    "country": "Poland",
+    "isp": "eTOP sp. z o.o.",
+    "mobile": false,
+    "latency": 0.13,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks4://122.252.179.66:5678",
+    "host": "122.252.179.66",
+    "port": 5678,
+    "country": "Cambodia",
+    "isp": "Phnom Penh Cable TV",
+    "mobile": false,
+    "latency": 1.24,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks4://14.241.242.177:1080",
+    "host": "14.241.242.177",
+    "port": 1080,
+    "country": "Vietnam",
+    "isp": "VNPT",
+    "mobile": false,
+    "latency": 0.21,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://72.195.34.35:27360",
+    "host": "72.195.34.35",
+    "port": 27360,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.3,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://216.171.106.142:443",
+    "host": "216.171.106.142",
+    "port": 443,
+    "country": "Canada",
+    "isp": "Rogers Communications Canada Inc",
+    "mobile": false,
+    "latency": 0.03,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks4://190.109.72.41:33633",
+    "host": "190.109.72.41",
+    "port": 33633,
+    "country": "Brazil",
+    "isp": "RG.COM - INFORMATICA & COMUNICACAO LTDA - ME",
+    "mobile": false,
+    "latency": 1.2,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://81.172.178.145:8443",
+    "host": "81.172.178.145",
+    "port": 8443,
+    "country": "The Netherlands",
+    "isp": "DELTA Fiber Nederland B.V.",
+    "mobile": false,
+    "latency": 0.12,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://95.31.215.191:2080",
+    "host": "95.31.215.191",
+    "port": 2080,
+    "country": "Russia",
+    "isp": "CORBINA-BROADBAND",
+    "mobile": false,
+    "latency": 0.18,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://1.20.254.32:4153",
+    "host": "1.20.254.32",
+    "port": 4153,
+    "country": "Thailand",
+    "isp": "TOT Public Company Limited",
+    "mobile": false,
+    "latency": 1.24,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://27.74.14.9:5000",
+    "host": "27.74.14.9",
+    "port": 5000,
+    "country": "Vietnam",
+    "isp": "Viettel Group",
+    "mobile": false,
+    "latency": 0.2,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://203.56.198.49:443",
+    "host": "203.56.198.49",
+    "port": 443,
+    "country": "China",
+    "isp": "China Telecom",
+    "mobile": false,
+    "latency": 0.26,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://38.28.193.42:443",
+    "host": "38.28.193.42",
+    "port": 443,
+    "country": "United States",
+    "isp": "PEG TECH INC",
+    "mobile": false,
+    "latency": 0.08,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks4://178.48.13.177:80",
+    "host": "178.48.13.177",
+    "port": 80,
+    "country": "Hungary",
+    "isp": "UPC",
+    "mobile": false,
+    "latency": 1.18,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://198.41.43.116:443",
+    "host": "198.41.43.116",
+    "port": 443,
+    "country": "Chile",
+    "isp": "Sonda S.A.",
+    "mobile": false,
+    "latency": 0.14,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://190.128.253.82:8444",
+    "host": "190.128.253.82",
+    "port": 8444,
+    "country": "Paraguay",
+    "isp": "Telecel S.A.",
+    "mobile": false,
+    "latency": 0.18,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://41.220.16.214:80",
+    "host": "41.220.16.214",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.26,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://89.111.27.221:443",
+    "host": "89.111.27.221",
+    "port": 443,
+    "country": "Latvia",
+    "isp": "Sabiedriba ar ierobezotu atbildibu DELSKA Latvia",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://113.204.79.230:9091",
+    "host": "113.204.79.230",
+    "port": 9091,
+    "country": "China",
+    "isp": "CHINA UNICOM China169 Backbone",
+    "mobile": false,
+    "latency": 0.2,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://72.195.101.99:4145",
+    "host": "72.195.101.99",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.24,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://195.192.209.130:8443",
+    "host": "195.192.209.130",
+    "port": 8443,
+    "country": "Austria",
+    "isp": "conova communications GmbH",
+    "mobile": false,
+    "latency": 0.13,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://119.235.50.246:4153",
+    "host": "119.235.50.246",
+    "port": 4153,
+    "country": "India",
+    "isp": "VAINAVI INDUSTIES LTD, INTERNET SERVICE PROVIDER, INDIA",
+    "mobile": false,
+    "latency": 1.27,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://195.226.213.254:8888",
+    "host": "195.226.213.254",
+    "port": 8888,
+    "country": "Ukraine",
+    "isp": "Private Enterprise KTV AIDA",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://41.220.16.218:80",
+    "host": "41.220.16.218",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.26,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://79.133.217.233:443",
+    "host": "79.133.217.233",
+    "port": 443,
+    "country": "Poland",
+    "isp": "eTOP sp. z o.o.",
+    "mobile": false,
+    "latency": 0.13,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://113.161.6.170:1080",
+    "host": "113.161.6.170",
+    "port": 1080,
+    "country": "Vietnam",
+    "isp": "VietNam Post and Telecom Corporation",
+    "mobile": false,
+    "latency": 1.25,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://137.175.22.84:443",
+    "host": "137.175.22.84",
+    "port": 443,
+    "country": "United States",
+    "isp": "PEG TECH INC",
+    "mobile": false,
+    "latency": 0.07,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://170.168.1.39:443",
+    "host": "170.168.1.39",
+    "port": 443,
+    "country": "Russia",
+    "isp": "MT FINANCE LLC",
+    "mobile": false,
+    "latency": 0.18,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "https://43.251.18.20:443",
+    "host": "43.251.18.20",
+    "port": 443,
+    "country": "Malaysia",
+    "isp": "Jabatan Digital Negara",
+    "mobile": false,
+    "latency": 0.21,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://187.249.159.60:999",
+    "host": "187.249.159.60",
+    "port": 999,
+    "country": "Mexico",
+    "isp": "Transtelco Inc",
+    "mobile": false,
+    "latency": 1.09,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://115.74.200.4:1080",
+    "host": "115.74.200.4",
+    "port": 1080,
+    "country": "Vietnam",
+    "isp": "VIETELxdsl",
+    "mobile": false,
+    "latency": 0.21,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "socks4://217.16.130.83:4145",
+    "host": "217.16.130.83",
+    "port": 4145,
+    "country": "Serbia",
+    "isp": "Jotel",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://103.18.78.157:1080",
+    "host": "103.18.78.157",
+    "port": 1080,
+    "country": "Indonesia",
+    "isp": "PT Usaha Adi Sanggoro",
+    "mobile": false,
+    "latency": 0.21,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://93.100.74.173:8088",
+    "host": "93.100.74.173",
+    "port": 8088,
+    "country": "Russia",
+    "isp": "SkyNet LLC",
+    "mobile": false,
+    "latency": 0.15,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://177.93.49.114:999",
+    "host": "177.93.49.114",
+    "port": 999,
+    "country": "Colombia",
+    "isp": "TV AZTECA SUCURSAL COLOMBIA",
+    "mobile": false,
+    "latency": 0.1,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://103.8.59.12:8080",
+    "host": "103.8.59.12",
+    "port": 8080,
+    "country": "Indonesia",
+    "isp": "PT Prime Link Communication",
+    "mobile": false,
+    "latency": 1.25,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  },
+  {
+    "proxy": "http://72.195.34.41:4145",
+    "host": "72.195.34.41",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.26,
+    "added_at": "2026-11-15 01:59:00 UTC"
+  }
+]
