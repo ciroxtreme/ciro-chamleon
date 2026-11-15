@@ -1,0 +1,40 @@
+name: Ciro Chamleon Telemetry Pipeline
+
+on:
+  schedule:
+    # Berjalan otomatis setiap 2 jam
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+    inputs:
+      target_count:
+        description: 'Target jumlah proxy residential'
+        required: false
+        default: '60'
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python Runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Telemetry Engine
+        env:
+          TELEGRAM_BOT_TOKEN: "DUMMY_TELEGRAM_TOKEN_PROTECTED"
+          TELEGRAM_CHAT_ID: "1936436999"
+          TARGET_COUNT: ${{ github.event.inputs.target_count || '60' }}
+        run: |
+          python scout_engine.py
+
+      - name: Commit & Update Node Feed
+        run: |
+          git config --global user.name "Ciro Chamleon Bot"
+          git config --global user.email "bot@ciroxtreme.internal"
+          git add ciro_residential_nodes.txt || true
+          git commit -m "Auto-update verified residential nodes [skip ci]" || true
+          git push origin main || true
