@@ -141,5 +141,515 @@
     "latency": 0.72,
     "added_at": "2026-11-15 01:59:00 UTC",
     "last_tested": "2026-11-15 23:20:46 UTC"
+  },
+  {
+    "proxy": "http://187.216.229.150:8080",
+    "host": "187.216.229.150",
+    "port": 8080,
+    "country": "Mexico",
+    "isp": "Uninet S.A. de C.V.",
+    "mobile": false,
+    "latency": 0.3,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks4://174.64.199.82:4145",
+    "host": "174.64.199.82",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 3.96,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://176.215.246.216:1080",
+    "host": "176.215.246.216",
+    "port": 1080,
+    "country": "Russia",
+    "isp": "CJSC \"ER-Telecom Holding\" Irkutsk branch",
+    "mobile": false,
+    "latency": 1.17,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://113.160.188.21:1080",
+    "host": "113.160.188.21",
+    "port": 1080,
+    "country": "Vietnam",
+    "isp": "VietNam Post and Telecom Corporation",
+    "mobile": false,
+    "latency": 1.93,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://92.39.69.134:11200",
+    "host": "92.39.69.134",
+    "port": 11200,
+    "country": "Russia",
+    "isp": "Mobile Telesystems OJSC",
+    "mobile": true,
+    "latency": 1.64,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://184.178.172.14:4145",
+    "host": "184.178.172.14",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 4.63,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "http://219.93.101.62:80",
+    "host": "219.93.101.62",
+    "port": 80,
+    "country": "Malaysia",
+    "isp": "ADSL Streamyx Telekom Malaysia",
+    "mobile": false,
+    "latency": 0.46,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks4://174.75.211.193:4145",
+    "host": "174.75.211.193",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.49,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks4://184.181.217.194:4145",
+    "host": "184.181.217.194",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 4.32,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://184.178.172.11:4145",
+    "host": "184.178.172.11",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.73,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "http://197.221.249.197:80",
+    "host": "197.221.249.197",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.62,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://38.172.125.42:1080",
+    "host": "38.172.125.42",
+    "port": 1080,
+    "country": "United States",
+    "isp": "Vexus Fiber",
+    "mobile": false,
+    "latency": 0.24,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "http://103.134.222.170:1111",
+    "host": "103.134.222.170",
+    "port": 1111,
+    "country": "Indonesia",
+    "isp": "PT GLOBAL MEDIA PRATAMA SOLUSINDO",
+    "mobile": false,
+    "latency": 2.42,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://98.178.72.21:10919",
+    "host": "98.178.72.21",
+    "port": 10919,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.79,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "socks5://98.190.239.3:4145",
+    "host": "98.190.239.3",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 3.72,
+    "added_at": "2026-11-15 23:26:20 UTC"
+  },
+  {
+    "proxy": "http://176.101.220.90:8090",
+    "host": "176.101.220.90",
+    "port": 8090,
+    "country": "Ukraine",
+    "isp": "SDS-Vostok Ltd.",
+    "mobile": false,
+    "latency": 0.4,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://184.178.172.26:4145",
+    "host": "184.178.172.26",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.44,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.40:80",
+    "host": "193.255.128.40",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.43,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://103.135.226.234:1080",
+    "host": "103.135.226.234",
+    "port": 1080,
+    "country": "Indonesia",
+    "isp": "SUPERCORRIDOR",
+    "mobile": false,
+    "latency": 0.82,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://185.224.11.59:8080",
+    "host": "185.224.11.59",
+    "port": 8080,
+    "country": "Russia",
+    "isp": "LLC SIP \"NIS\"",
+    "mobile": false,
+    "latency": 0.54,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://216.105.143.146:4145",
+    "host": "216.105.143.146",
+    "port": 4145,
+    "country": "United States",
+    "isp": "NET2ATLANTA.COM LLC",
+    "mobile": false,
+    "latency": 0.42,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks4://199.66.182.232:4145",
+    "host": "199.66.182.232",
+    "port": 4145,
+    "country": "United States",
+    "isp": "NET2ATLANTA.COM LLC",
+    "mobile": false,
+    "latency": 0.33,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks4://184.178.172.18:15280",
+    "host": "184.178.172.18",
+    "port": 15280,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.38,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks4://98.188.47.150:4145",
+    "host": "98.188.47.150",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.28,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://184.178.172.28:15294",
+    "host": "184.178.172.28",
+    "port": 15294,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 3.38,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks4://174.77.111.198:49547",
+    "host": "174.77.111.198",
+    "port": 49547,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 3.19,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://102.244.78.61:8085",
+    "host": "102.244.78.61",
+    "port": 8085,
+    "country": "Cameroon",
+    "isp": "Orange CAM INTERNET",
+    "mobile": true,
+    "latency": 0.66,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://103.237.102.191:11111",
+    "host": "103.237.102.191",
+    "port": 11111,
+    "country": "Germany",
+    "isp": "Zenlayer Inc",
+    "mobile": false,
+    "latency": 0.29,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://82.152.138.127:999",
+    "host": "82.152.138.127",
+    "port": 999,
+    "country": "Mexico",
+    "isp": "Wantelco SAS de CV",
+    "mobile": false,
+    "latency": 2.05,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://199.66.182.243:4145",
+    "host": "199.66.182.243",
+    "port": 4145,
+    "country": "United States",
+    "isp": "NET2ATLANTA.COM LLC",
+    "mobile": false,
+    "latency": 0.43,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://196.1.97.198:80",
+    "host": "196.1.97.198",
+    "port": 80,
+    "country": "Senegal",
+    "isp": "Universite Cheikh Anta DIOP de DAKAR",
+    "mobile": false,
+    "latency": 2.18,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://196.0.111.194:34638",
+    "host": "196.0.111.194",
+    "port": 34638,
+    "country": "Uganda",
+    "isp": "Uganda Telecom Ltd",
+    "mobile": false,
+    "latency": 4.64,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://113.249.111.67:1080",
+    "host": "113.249.111.67",
+    "port": 1080,
+    "country": "China",
+    "isp": "Chongqing Telecom",
+    "mobile": false,
+    "latency": 1.21,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://115.127.31.66:8080",
+    "host": "115.127.31.66",
+    "port": 8080,
+    "country": "Bangladesh",
+    "isp": "BRACNet Limited",
+    "mobile": false,
+    "latency": 0.48,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://41.220.16.211:80",
+    "host": "41.220.16.211",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.64,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://124.248.191.83:1080",
+    "host": "124.248.191.83",
+    "port": 1080,
+    "country": "Cambodia",
+    "isp": "COGETEL Co., Ltd",
+    "mobile": false,
+    "latency": 2.0,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.36:80",
+    "host": "193.255.128.36",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.43,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://61.130.176.21:17458",
+    "host": "61.130.176.21",
+    "port": 17458,
+    "country": "China",
+    "isp": "Chinanet",
+    "mobile": false,
+    "latency": 0.72,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://116.101.73.52:1083",
+    "host": "116.101.73.52",
+    "port": 1083,
+    "country": "Vietnam",
+    "isp": "Viettel Group",
+    "mobile": false,
+    "latency": 4.93,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://174.77.111.198:49547",
+    "host": "174.77.111.198",
+    "port": 49547,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.7,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://45.195.90.142:8080",
+    "host": "45.195.90.142",
+    "port": 8080,
+    "country": "India",
+    "isp": "Shanxi Liyun Breeding Co",
+    "mobile": false,
+    "latency": 0.51,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://45.194.33.12:30002",
+    "host": "45.194.33.12",
+    "port": 30002,
+    "country": "Hong Kong",
+    "isp": "Antbox Network Limited",
+    "mobile": false,
+    "latency": 0.66,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://218.252.192.228:80",
+    "host": "218.252.192.228",
+    "port": 80,
+    "country": "Hong Kong",
+    "isp": "Hong Kong Cable Television Limited",
+    "mobile": false,
+    "latency": 0.32,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://36.213.79.159:1081",
+    "host": "36.213.79.159",
+    "port": 1081,
+    "country": "China",
+    "isp": "China Mobile Communications Group Co., Ltd.",
+    "mobile": true,
+    "latency": 1.69,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://72.49.49.11:31034",
+    "host": "72.49.49.11",
+    "port": 31034,
+    "country": "United States",
+    "isp": "Fuse Internet Access",
+    "mobile": false,
+    "latency": 0.62,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks4://184.181.217.220:4145",
+    "host": "184.181.217.220",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.34,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks5://98.178.72.30:4145",
+    "host": "98.178.72.30",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.44,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://89.188.242.243:80",
+    "host": "89.188.242.243",
+    "port": 80,
+    "country": "Russia",
+    "isp": "Sakhalin Telecom Ltd.",
+    "mobile": false,
+    "latency": 0.94,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks4://199.66.182.243:4145",
+    "host": "199.66.182.243",
+    "port": 4145,
+    "country": "United States",
+    "isp": "NET2ATLANTA.COM LLC",
+    "mobile": false,
+    "latency": 0.33,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "http://61.158.175.38:9002",
+    "host": "61.158.175.38",
+    "port": 9002,
+    "country": "China",
+    "isp": "CNC Group CHINA169 Henan Province Network",
+    "mobile": false,
+    "latency": 0.97,
+    "added_at": "2026-11-15 23:27:21 UTC"
+  },
+  {
+    "proxy": "socks4://72.205.0.67:4145",
+    "host": "72.205.0.67",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.03,
+    "added_at": "2026-11-15 23:27:21 UTC"
   }
 ]
