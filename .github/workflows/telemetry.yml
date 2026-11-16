@@ -27,7 +27,7 @@ jobs:
 
       - name: Install Network & SOCKS Dependencies
         run: |
-          pip install --quiet PySocks urllib3
+          pip install --quiet PySocks urllib3 curl_cffi
 
       - name: Run Selected Engine
         run: |
