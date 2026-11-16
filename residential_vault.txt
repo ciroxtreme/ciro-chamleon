@@ -1,19 +1,9 @@
 # ========================================================
-# CIRO CHAMLEON - MULTI-TIER RESIDENTIAL VAULT
-# Total Bersih: 27 Proxies | Terakhir Uji: 2026-11-16 11:15:20 UTC
-# Mendukung: HTTP, HTTPS, SOCKS4, SOCKS5
+# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)
+# Total Akumulasi: 69 Proxies Unik (Anti-Duplikat)
+# Terakhir Diperbarui: 2026-11-16 15:21:46 UTC
 # ========================================================
 
-# --------------------------------------------------------
-# 🌟 TIER 1: THE HOLY GRAIL (0 IP)
-# Lolos WAF Cloudflare / StockX (Bebas Dosa & Anti-Challenge)
-# --------------------------------------------------------
-# (Sedang dipindai ulang oleh scout engine...)
-
-# --------------------------------------------------------
-# 🟢 TIER 2: ACTIVE WARRIORS (27 IP)
-# Kencang & Responsif (< 2.5s) - Sangat Cocok untuk Regular Scraping
-# --------------------------------------------------------
 http://185.49.31.205:8080 # [Poland] Korbank S. A (0.37s)
 http://203.95.198.150:8080 # [Cambodia] Today Communication Co (0.42s)
 http://103.216.50.11:8080 # [Cambodia] Today Communication Co (0.44s)
@@ -41,3 +31,45 @@ socks5://184.178.172.26:4145 # [United States] Cox Communications Inc. (4.15s)
 socks5://174.77.111.198:49547 # [United States] Cox Communications Inc. (4.23s)
 socks5://174.75.211.222:4145 # [United States] Cox Communications Inc. (4.92s)
 socks5://98.181.137.83:4145 # [United States] Cox Communications Inc. (5.11s)
+http://82.137.90.220:80 # [Bulgaria] Bulgarian Telecommunications Company Plc. (0.48s)
+http://163.223.37.170:3125 # [Indonesia] PT Digitama Network Indonesia (0.48s)
+http://193.255.128.137:80 # [Türkiye] National Academic Network and Information Center (0.4s)
+http://193.255.128.81:80 # [Türkiye] National Academic Network and Information Center (0.51s)
+socks5://89.148.196.156:1080 # [Russia] MTS PJSC (2.88s)
+socks5://66.42.224.229:41679 # [United States] Cincinnati Bell Telephone Company LLC (0.88s)
+http://154.3.76.16:999 # [Venezuela] M&S.NET, C.A. (4.01s)
+http://177.234.217.43:999 # [Ecuador] Ufinet Panama S.A. (0.87s)
+http://193.255.128.180:80 # [Türkiye] National Academic Network and Information Center (0.48s)
+socks4://116.101.73.161:1081 # [Vietnam] Viettel Group (3.16s)
+socks4://98.181.137.80:4145 # [United States] Cox Communications Inc. (1.38s)
+http://109.127.199.90:9999 # [Slovenia] ARNES provider (1.1s)
+http://197.221.240.182:80 # [Zimbabwe] Telone PVT Ltd (0.52s)
+http://202.146.230.102:8080 # [Indonesia] PT Centrin Utama (2.69s)
+http://193.255.128.30:80 # [Türkiye] National Academic Network and Information Center (0.38s)
+socks5://174.77.111.197:4145 # [United States] Cox Communications Inc. (4.44s)
+socks4://184.181.217.201:4145 # [United States] Cox Communications Inc. (2.2s)
+http://193.255.128.245:80 # [Türkiye] National Academic Network and Information Center (0.48s)
+http://193.255.128.196:80 # [Türkiye] National Academic Network and Information Center (0.39s)
+socks5://46.174.120.163:8090 # [Ukraine] LLC EKSINTECH (0.56s)
+http://193.255.128.147:80 # [Türkiye] National Academic Network and Information Center (0.39s)
+http://193.255.128.105:80 # [Türkiye] National Academic Network and Information Center (0.37s)
+socks4://68.71.242.118:4145 # [United States] Performive LLC (0.23s)
+socks4://72.214.108.67:4145 # [United States] Cox Communications Inc (2.2s)
+http://196.223.129.21:80 # [South Africa] HERO TELECOMS (PTY) LTD (0.46s)
+http://198.15.30.206:8080 # [Indonesia] PT Trimafa Computindo Networking (1.21s)
+http://153.0.171.163:8085 # [China] China Unicom Hainan Province Network (1.11s)
+socks5://184.178.172.18:15280 # [United States] Cox Communications Inc. (2.53s)
+http://103.125.174.83:8080 # [Indonesia] PT Trinity Teknologi Nusantara (2.82s)
+socks5://72.195.34.35:27360 # [United States] Cox Communications Inc. (2.63s)
+socks5://113.249.111.67:1080 # [China] Chongqing Telecom (1.31s)
+http://193.255.128.138:80 # [Türkiye] National Academic Network and Information Center (0.37s)
+http://193.255.128.134:80 # [Türkiye] National Academic Network and Information Center (0.39s)
+http://193.255.128.33:80 # [Türkiye] National Academic Network and Information Center (0.39s)
+http://203.175.102.97:8080 # [Indonesia] PT. Mitra Kita Brilian (3.76s)
+http://197.221.249.197:80 # [Zimbabwe] Telone PVT Ltd (0.53s)
+http://124.217.0.75:8082 # [Philippines] Philippine Long Distance Telephone Co. (2.05s)
+http://103.101.193.170:1111 # [Indonesia] PT Bintang Teknologi Sejahtera (2.44s)
+http://218.252.192.228:80 # [Hong Kong] Hong Kong Cable Television Limited (0.39s)
+http://103.46.186.17:8090 # [Indonesia] PT Air Lintas Komunikasi (2.25s)
+http://37.152.91.187:8080 # [Spain] Soluciones Corporativas IP (1.45s)
+http://41.220.16.211:80 # [Zimbabwe] Telone PVT Ltd (0.53s)
