@@ -466,5 +466,345 @@
     "added_at": "2026-11-16 15:21:24 UTC",
     "last_tested": "2026-11-16 21:02:48 UTC",
     "holy_grail": false
+  },
+  {
+    "proxy": "socks4://72.195.34.60:27391",
+    "host": "72.195.34.60",
+    "port": 27391,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.53,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://154.3.76.16:999",
+    "host": "154.3.76.16",
+    "port": 999,
+    "country": "Venezuela",
+    "isp": "M&S.NET, C.A.",
+    "mobile": false,
+    "latency": 3.04,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.99:80",
+    "host": "193.255.128.99",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.37,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://46.122.16.54:8080",
+    "host": "46.122.16.54",
+    "port": 8080,
+    "country": "Slovenia",
+    "isp": "A1 Slovenija",
+    "mobile": false,
+    "latency": 1.42,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.31:80",
+    "host": "193.255.128.31",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://145.220.227.67:8080",
+    "host": "145.220.227.67",
+    "port": 8080,
+    "country": "The Netherlands",
+    "isp": "SURFnet III d",
+    "mobile": false,
+    "latency": 0.18,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.88:80",
+    "host": "193.255.128.88",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.35,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://45.155.226.177:3128",
+    "host": "45.155.226.177",
+    "port": 3128,
+    "country": "Hong Kong",
+    "isp": "haoxiangyun",
+    "mobile": false,
+    "latency": 1.11,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.95:80",
+    "host": "193.255.128.95",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.106:80",
+    "host": "193.255.128.106",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.85:80",
+    "host": "193.255.128.85",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.35,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.64:80",
+    "host": "193.255.128.64",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.35,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks5://216.105.130.131:4145",
+    "host": "216.105.130.131",
+    "port": 4145,
+    "country": "United States",
+    "isp": "NET2ATLANTA.COM LLC",
+    "mobile": false,
+    "latency": 0.33,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks4://68.71.249.153:48606",
+    "host": "68.71.249.153",
+    "port": 48606,
+    "country": "United States",
+    "isp": "Performive LLC",
+    "mobile": false,
+    "latency": 0.25,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.20:80",
+    "host": "193.255.128.20",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://83.168.74.163:8080",
+    "host": "83.168.74.163",
+    "port": 8080,
+    "country": "Poland",
+    "isp": "Korbank S. A.",
+    "mobile": false,
+    "latency": 0.21,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.160:80",
+    "host": "193.255.128.160",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks5://174.75.211.193:4145",
+    "host": "174.75.211.193",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.7,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks4://98.188.47.132:4145",
+    "host": "98.188.47.132",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.8,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks4://184.178.172.23:4145",
+    "host": "184.178.172.23",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.1,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://202.133.88.173:80",
+    "host": "202.133.88.173",
+    "port": 80,
+    "country": "France",
+    "isp": "BitCommand LLC",
+    "mobile": false,
+    "latency": 1.91,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.130:80",
+    "host": "193.255.128.130",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.35,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://175.106.15.186:8080",
+    "host": "175.106.15.186",
+    "port": 8080,
+    "country": "Indonesia",
+    "isp": "Quantum Dist Cyber",
+    "mobile": false,
+    "latency": 3.79,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks4://72.195.34.58:4145",
+    "host": "72.195.34.58",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.44,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://41.220.16.214:80",
+    "host": "41.220.16.214",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.49,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.78:80",
+    "host": "193.255.128.78",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks4://174.77.111.197:4145",
+    "host": "174.77.111.197",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.99,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks5://72.214.108.67:4145",
+    "host": "72.214.108.67",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc",
+    "mobile": false,
+    "latency": 0.89,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks4://72.195.34.42:4145",
+    "host": "72.195.34.42",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.87,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.104:80",
+    "host": "193.255.128.104",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://41.220.16.223:80",
+    "host": "41.220.16.223",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.48,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.97:80",
+    "host": "193.255.128.97",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.111:80",
+    "host": "193.255.128.111",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.34,
+    "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks5://72.205.0.67:4145",
+    "host": "72.205.0.67",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.44,
+    "added_at": "2026-11-17 00:09:21 UTC"
   }
 ]

@@ -1,19 +1,9 @@
 # ========================================================
-# CIRO CHAMLEON - MULTI-TIER RESIDENTIAL VAULT
-# Total Bersih: 39 Proxies | Terakhir Uji: 2026-11-16 21:02:51 UTC
-# Mendukung: HTTP, HTTPS, SOCKS4, SOCKS5
+# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)
+# Total Akumulasi: 73 Proxies Unik (Anti-Duplikat)
+# Terakhir Diperbarui: 2026-11-17 00:09:51 UTC
 # ========================================================
 
-# --------------------------------------------------------
-# 🌟 TIER 1: THE HOLY GRAIL (0 IP)
-# Lolos WAF Cloudflare / StockX (Bebas Dosa & Anti-Challenge)
-# --------------------------------------------------------
-# (Sedang dipindai ulang oleh scout engine...)
-
-# --------------------------------------------------------
-# 🟢 TIER 2: ACTIVE WARRIORS (39 IP)
-# Kencang & Responsif (< 2.5s) - Sangat Cocok untuk Regular Scraping
-# --------------------------------------------------------
 socks4://68.71.242.118:4145 # [United States] Performive LLC (0.17s)
 http://218.252.192.228:80 # [Hong Kong] Hong Kong Cable Television Limited (0.3s)
 http://185.49.31.205:8080 # [Poland] Korbank S. A (0.34s)
@@ -53,3 +43,37 @@ socks5://66.42.224.229:41679 # [United States] Cincinnati Bell Telephone Company
 socks5://113.249.111.67:1080 # [China] Chongqing Telecom (2.93s)
 socks4://98.175.31.195:4145 # [United States] Cox Communications Inc. (4.19s)
 http://37.152.91.187:8080 # [Spain] Soluciones Corporativas IP (4.32s)
+socks4://72.195.34.60:27391 # [United States] Cox Communications Inc. (0.53s)
+http://154.3.76.16:999 # [Venezuela] M&S.NET, C.A. (3.04s)
+http://193.255.128.99:80 # [Türkiye] National Academic Network and Information Center (0.37s)
+http://46.122.16.54:8080 # [Slovenia] A1 Slovenija (1.42s)
+http://193.255.128.31:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+http://145.220.227.67:8080 # [The Netherlands] SURFnet III d (0.18s)
+http://193.255.128.88:80 # [Türkiye] National Academic Network and Information Center (0.35s)
+http://45.155.226.177:3128 # [Hong Kong] haoxiangyun (1.11s)
+http://193.255.128.95:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+http://193.255.128.106:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+http://193.255.128.85:80 # [Türkiye] National Academic Network and Information Center (0.35s)
+http://193.255.128.64:80 # [Türkiye] National Academic Network and Information Center (0.35s)
+socks5://216.105.130.131:4145 # [United States] NET2ATLANTA.COM LLC (0.33s)
+socks4://68.71.249.153:48606 # [United States] Performive LLC (0.25s)
+http://193.255.128.20:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+http://83.168.74.163:8080 # [Poland] Korbank S. A. (0.21s)
+http://193.255.128.160:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+socks5://174.75.211.193:4145 # [United States] Cox Communications Inc. (0.7s)
+socks4://98.188.47.132:4145 # [United States] Cox Communications Inc. (0.8s)
+socks4://184.178.172.23:4145 # [United States] Cox Communications Inc. (1.1s)
+http://202.133.88.173:80 # [France] BitCommand LLC (1.91s)
+http://193.255.128.130:80 # [Türkiye] National Academic Network and Information Center (0.35s)
+http://175.106.15.186:8080 # [Indonesia] Quantum Dist Cyber (3.79s)
+socks4://72.195.34.58:4145 # [United States] Cox Communications Inc. (0.44s)
+http://41.220.16.214:80 # [Zimbabwe] Telone PVT Ltd (0.49s)
+http://193.255.128.78:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+socks4://174.77.111.197:4145 # [United States] Cox Communications Inc. (0.99s)
+socks5://72.214.108.67:4145 # [United States] Cox Communications Inc (0.89s)
+socks4://72.195.34.42:4145 # [United States] Cox Communications Inc. (0.87s)
+http://193.255.128.104:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+http://41.220.16.223:80 # [Zimbabwe] Telone PVT Ltd (0.48s)
+http://193.255.128.97:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+http://193.255.128.111:80 # [Türkiye] National Academic Network and Information Center (0.34s)
+socks5://72.205.0.67:4145 # [United States] Cox Communications Inc. (1.44s)
