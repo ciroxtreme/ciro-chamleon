@@ -806,5 +806,145 @@
     "mobile": false,
     "latency": 1.44,
     "added_at": "2026-11-17 00:09:21 UTC"
+  },
+  {
+    "proxy": "socks4://72.205.0.67:4145",
+    "host": "72.205.0.67",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.45,
+    "added_at": "2026-11-17 09:00:19 UTC"
+  },
+  {
+    "proxy": "socks5://98.191.0.47:4145",
+    "host": "98.191.0.47",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.23,
+    "added_at": "2026-11-17 09:00:19 UTC"
+  },
+  {
+    "proxy": "socks5://184.181.217.213:4145",
+    "host": "184.181.217.213",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.35,
+    "added_at": "2026-11-17 09:00:19 UTC"
+  },
+  {
+    "proxy": "http://112.65.132.182:3128",
+    "host": "112.65.132.182",
+    "port": 3128,
+    "country": "China",
+    "isp": "China Unicom CHINA169 Shanghai Province Network",
+    "mobile": false,
+    "latency": 0.98,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "http://45.4.202.147:999",
+    "host": "45.4.202.147",
+    "port": 999,
+    "country": "Ecuador",
+    "isp": "Eliana Vanessa Morocho O\u00f1a",
+    "mobile": false,
+    "latency": 3.81,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "socks4://72.195.101.99:4145",
+    "host": "72.195.101.99",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.75,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "socks5://184.181.217.210:4145",
+    "host": "184.181.217.210",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.61,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.143:80",
+    "host": "193.255.128.143",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.43,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "http://103.203.234.42:8080",
+    "host": "103.203.234.42",
+    "port": 8080,
+    "country": "Indonesia",
+    "isp": "PT Nesta Indo Media",
+    "mobile": false,
+    "latency": 1.46,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "socks5://58.27.213.133:1080",
+    "host": "58.27.213.133",
+    "port": 1080,
+    "country": "Pakistan",
+    "isp": "Wateen Telecom Limited",
+    "mobile": false,
+    "latency": 2.45,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "socks5://95.64.183.46:1080",
+    "host": "95.64.183.46",
+    "port": 1080,
+    "country": "Russia",
+    "isp": "MTS PJSC",
+    "mobile": true,
+    "latency": 2.06,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "http://170.244.91.1:999",
+    "host": "170.244.91.1",
+    "port": 999,
+    "country": "Venezuela",
+    "isp": "WELLCOMM TECNOLOG\u00cdA, C.A.",
+    "mobile": false,
+    "latency": 2.56,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "http://200.24.153.79:8080",
+    "host": "200.24.153.79",
+    "port": 8080,
+    "country": "Ecuador",
+    "isp": "Negocios Y Telefonia Nedetel S.A",
+    "mobile": false,
+    "latency": 2.12,
+    "added_at": "2026-11-17 09:01:20 UTC"
+  },
+  {
+    "proxy": "socks5://98.170.57.231:4145",
+    "host": "98.170.57.231",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 4.0,
+    "added_at": "2026-11-17 09:01:20 UTC"
   }
 ]

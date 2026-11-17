@@ -1,7 +1,7 @@
 # ========================================================
 # CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)
-# Total Akumulasi: 73 Proxies Unik (Anti-Duplikat)
-# Terakhir Diperbarui: 2026-11-17 00:09:51 UTC
+# Total Akumulasi: 87 Proxies Unik (Anti-Duplikat)
+# Terakhir Diperbarui: 2026-11-17 09:01:38 UTC
 # ========================================================
 
 socks4://68.71.242.118:4145 # [United States] Performive LLC (0.17s)
@@ -77,3 +77,17 @@ http://41.220.16.223:80 # [Zimbabwe] Telone PVT Ltd (0.48s)
 http://193.255.128.97:80 # [Türkiye] National Academic Network and Information Center (0.34s)
 http://193.255.128.111:80 # [Türkiye] National Academic Network and Information Center (0.34s)
 socks5://72.205.0.67:4145 # [United States] Cox Communications Inc. (1.44s)
+socks4://72.205.0.67:4145 # [United States] Cox Communications Inc. (1.45s)
+socks5://98.191.0.47:4145 # [United States] Cox Communications Inc. (2.23s)
+socks5://184.181.217.213:4145 # [United States] Cox Communications Inc. (1.35s)
+http://112.65.132.182:3128 # [China] China Unicom CHINA169 Shanghai Province Network (0.98s)
+http://45.4.202.147:999 # [Ecuador] Eliana Vanessa Morocho Oña (3.81s)
+socks4://72.195.101.99:4145 # [United States] Cox Communications Inc. (0.75s)
+socks5://184.181.217.210:4145 # [United States] Cox Communications Inc. (2.61s)
+http://193.255.128.143:80 # [Türkiye] National Academic Network and Information Center (0.43s)
+http://103.203.234.42:8080 # [Indonesia] PT Nesta Indo Media (1.46s)
+socks5://58.27.213.133:1080 # [Pakistan] Wateen Telecom Limited (2.45s)
+socks5://95.64.183.46:1080 # [Russia] MTS PJSC (2.06s)
+http://170.244.91.1:999 # [Venezuela] WELLCOMM TECNOLOGÍA, C.A. (2.56s)
+http://200.24.153.79:8080 # [Ecuador] Negocios Y Telefonia Nedetel S.A (2.12s)
+socks5://98.170.57.231:4145 # [United States] Cox Communications Inc. (4.0s)
