@@ -1006,5 +1006,175 @@
     "added_at": "2026-11-17 00:09:21 UTC",
     "last_tested": "2026-11-18 16:01:01 UTC",
     "holy_grail": false
+  },
+  {
+    "proxy": "socks4://184.181.217.210:4145",
+    "host": "184.181.217.210",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.46,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks5://98.170.57.231:4145",
+    "host": "98.170.57.231",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.49,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks4://116.101.73.52:1055",
+    "host": "116.101.73.52",
+    "port": 1055,
+    "country": "Vietnam",
+    "isp": "Viettel Group",
+    "mobile": false,
+    "latency": 2.29,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks4://199.102.105.242:4145",
+    "host": "199.102.105.242",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Performive LLC",
+    "mobile": false,
+    "latency": 0.24,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks5://184.182.240.12:4145",
+    "host": "184.182.240.12",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.52,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks4://184.178.172.14:4145",
+    "host": "184.178.172.14",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.46,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "http://196.1.93.10:80",
+    "host": "196.1.93.10",
+    "port": 80,
+    "country": "Senegal",
+    "isp": "Universite Cheikh Anta DIOP de DAKAR",
+    "mobile": false,
+    "latency": 2.28,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "http://45.194.3.119:8080",
+    "host": "45.194.3.119",
+    "port": 8080,
+    "country": "India",
+    "isp": "CtrlS",
+    "mobile": false,
+    "latency": 0.43,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks4://72.207.33.64:4145",
+    "host": "72.207.33.64",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.47,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks5://184.178.172.14:4145",
+    "host": "184.178.172.14",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.49,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks4://184.178.172.13:15311",
+    "host": "184.178.172.13",
+    "port": 15311,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.41,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.173:80",
+    "host": "193.255.128.173",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.43,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks4://72.207.109.5:4145",
+    "host": "72.207.109.5",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.65,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "http://157.66.36.103:8080",
+    "host": "157.66.36.103",
+    "port": 8080,
+    "country": "Indonesia",
+    "isp": "PT Trik Media Data",
+    "mobile": false,
+    "latency": 0.67,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.10:80",
+    "host": "193.255.128.10",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.42,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks4://174.77.111.198:49547",
+    "host": "174.77.111.198",
+    "port": 49547,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.49,
+    "added_at": "2026-11-18 18:49:07 UTC"
+  },
+  {
+    "proxy": "socks5://184.178.172.28:15294",
+    "host": "184.178.172.28",
+    "port": 15294,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.75,
+    "added_at": "2026-11-18 18:49:07 UTC"
   }
 ]
