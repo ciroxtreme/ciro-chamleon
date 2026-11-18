@@ -1,19 +1,10 @@
 # ========================================================
-# CIRO CHAMLEON - MULTI-TIER RESIDENTIAL VAULT
-# Total Bersih: 69 Proxies | Terakhir Uji: 2026-11-17 21:44:10 UTC
-# Mendukung: HTTP, HTTPS, SOCKS4, SOCKS5
+# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)
+# Total Akumulasi: 75 Proxies Unik (Anti-Duplikat)
+# Terakhir Diperbarui: 2026-11-18 01:39:02 UTC
 # ========================================================
 
-# --------------------------------------------------------
-# 🌟 TIER 1: THE HOLY GRAIL (1 IP)
-# Lolos WAF Cloudflare / StockX (Bebas Dosa & Anti-Challenge)
-# --------------------------------------------------------
-http://145.220.227.67:8080 # [The Netherlands] SURFnet III d (0.32s) [HOLY_GRAIL]
-
-# --------------------------------------------------------
-# 🟢 TIER 2: ACTIVE WARRIORS (68 IP)
-# Kencang & Responsif (< 2.5s) - Sangat Cocok untuk Regular Scraping
-# --------------------------------------------------------
+http://145.220.227.67:8080 # [The Netherlands] SURFnet III d (0.32s)
 socks4://68.71.249.153:48606 # [United States] Performive LLC (0.17s)
 socks4://68.71.242.118:4145 # [United States] Performive LLC (0.17s)
 http://218.252.192.228:80 # [Hong Kong] Hong Kong Cable Television Limited (0.3s)
@@ -82,3 +73,9 @@ socks5://72.205.0.67:4145 # [United States] Cox Communications Inc. (1.19s)
 socks5://98.178.72.30:4145 # [United States] Cox Communications Inc. (1.4s)
 socks4://98.175.31.195:4145 # [United States] Cox Communications Inc. (1.65s)
 socks4://184.185.2.12:4145 # [United States] Cox Communications Inc. (2.28s)
+socks4://98.170.57.249:4145 # [United States] Cox Communications Inc. (3.32s)
+http://180.93.102.159:40007 # [Vietnam] SPT (1.49s)
+http://79.137.192.114:80 # [Russia] Aeza Group LLC (0.4s)
+http://182.52.229.165:8080 # [Thailand] TOT Public Company Limited (1.55s)
+socks5://83.172.43.66:1080 # [Russia] NEOTELECOM (1.11s)
+socks4://72.195.114.169:4145 # [United States] Cox Communications Inc. (1.22s)
