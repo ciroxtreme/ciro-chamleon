@@ -1562,5 +1562,215 @@
     "mobile": false,
     "latency": 1.6,
     "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "socks4://184.178.172.26:4145",
+    "host": "184.178.172.26",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.71,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://203.76.222.172:1212",
+    "host": "203.76.222.172",
+    "port": 1212,
+    "country": "Bangladesh",
+    "isp": "BUSINESSNETWORK",
+    "mobile": false,
+    "latency": 2.76,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://45.190.85.1:999",
+    "host": "45.190.85.1",
+    "port": 999,
+    "country": "Venezuela",
+    "isp": "TELECOM.CORPORATIVAS TELECORP, C.A",
+    "mobile": false,
+    "latency": 1.36,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://201.7.31.203:8080",
+    "host": "201.7.31.203",
+    "port": 8080,
+    "country": "Turkey",
+    "isp": "High Speed For Internet Services L.L.C",
+    "mobile": false,
+    "latency": 3.15,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "socks5://174.77.111.198:49547",
+    "host": "174.77.111.198",
+    "port": 49547,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.45,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://197.164.101.11:1981",
+    "host": "197.164.101.11",
+    "port": 1981,
+    "country": "Egypt",
+    "isp": "Link Egypt (Link.NET)",
+    "mobile": false,
+    "latency": 0.68,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://187.249.159.38:999",
+    "host": "187.249.159.38",
+    "port": 999,
+    "country": "Mexico",
+    "isp": "Transtelco Inc",
+    "mobile": false,
+    "latency": 0.91,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://219.148.171.178:9445",
+    "host": "219.148.171.178",
+    "port": 9445,
+    "country": "China",
+    "isp": "Chinanet",
+    "mobile": false,
+    "latency": 1.49,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://149.50.231.182:8085",
+    "host": "149.50.231.182",
+    "port": 8085,
+    "country": "T\u00fcrkiye",
+    "isp": "Veganet Teknolojileri VE Hizmetleri Limited Sirketi",
+    "mobile": false,
+    "latency": 0.68,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "http://123.30.234.153:1315",
+    "host": "123.30.234.153",
+    "port": 1315,
+    "country": "Vietnam",
+    "isp": "VietNam Post and Telecom Corporation",
+    "mobile": false,
+    "latency": 0.48,
+    "added_at": "2026-11-19 19:30:30 UTC"
+  },
+  {
+    "proxy": "socks5://24.249.199.12:4145",
+    "host": "24.249.199.12",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.06,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "socks5://72.206.74.126:4145",
+    "host": "72.206.74.126",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.68,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "socks4://70.166.167.55:57745",
+    "host": "70.166.167.55",
+    "port": 57745,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.27,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "http://109.194.34.246:8082",
+    "host": "109.194.34.246",
+    "port": 8082,
+    "country": "Russia",
+    "isp": "JSC \"ER-Telecom Holding\"",
+    "mobile": false,
+    "latency": 0.51,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "socks5://103.124.172.134:1080",
+    "host": "103.124.172.134",
+    "port": 1080,
+    "country": "India",
+    "isp": "Shirsty Internet Services Pvt Ltd",
+    "mobile": false,
+    "latency": 1.19,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "http://112.203.35.174:8082",
+    "host": "112.203.35.174",
+    "port": 8082,
+    "country": "Philippines",
+    "isp": "Philippine Long Distance Telephone Co.",
+    "mobile": false,
+    "latency": 0.92,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "socks5://98.178.72.21:10919",
+    "host": "98.178.72.21",
+    "port": 10919,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.78,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "http://113.192.48.75:8080",
+    "host": "113.192.48.75",
+    "port": 8080,
+    "country": "Indonesia",
+    "isp": "PT.Global Media Data Prima",
+    "mobile": false,
+    "latency": 1.81,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "http://197.221.234.252:80",
+    "host": "197.221.234.252",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.53,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "http://42.96.12.16:55555",
+    "host": "42.96.12.16",
+    "port": 55555,
+    "country": "Vietnam",
+    "isp": "Bach Kim Network solutions Join stock company",
+    "mobile": false,
+    "latency": 0.56,
+    "added_at": "2026-11-19 19:30:31 UTC"
+  },
+  {
+    "proxy": "http://61.91.162.126:8080",
+    "host": "61.91.162.126",
+    "port": 8080,
+    "country": "Thailand",
+    "isp": "True Internet Corporation CO. Ltd.",
+    "mobile": false,
+    "latency": 0.49,
+    "added_at": "2026-11-19 19:30:31 UTC"
   }
 ]
