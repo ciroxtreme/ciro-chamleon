@@ -1,7 +1,7 @@
 # ========================================================
 # CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)
-# Total Akumulasi: 127 Proxies Unik (Anti-Duplikat)
-# Terakhir Diperbarui: 2026-11-19 01:07:58 UTC
+# Total Akumulasi: 144 Proxies Unik (Anti-Duplikat)
+# Terakhir Diperbarui: 2026-11-19 10:07:20 UTC
 # ========================================================
 
 http://145.220.227.67:8080 # [The Netherlands] SURFnet III d (0.19s)
@@ -131,3 +131,20 @@ http://193.233.220.20:80 # [Russia] Aeza Group LLC (0.73s)
 http://197.221.249.196:80 # [Zimbabwe] Telone PVT Ltd (0.6s)
 socks4://98.190.239.3:4145 # [United States] Cox Communications Inc. (1.69s)
 http://183.162.197.197:8060 # [China] Chinanet (1.59s)
+http://102.244.78.61:8088 # [Cameroon] Orange CAM INTERNET (0.75s)
+http://193.255.128.118:80 # [Türkiye] National Academic Network and Information Center (0.36s)
+http://197.221.249.199:80 # [Zimbabwe] Telone PVT Ltd (1.11s)
+socks4://174.75.211.222:4145 # [United States] Cox Communications Inc. (3.2s)
+http://103.112.44.197:8085 # [Indonesia] PT.Globalnet Multi Data (2.28s)
+http://45.230.168.37:999 # [Venezuela] Soluciones DCN Network C.A (0.21s)
+http://43.251.205.146:8080 # [Thailand] United Information Highway Co., Ltd. (0.72s)
+http://192.203.0.166:999 # [Puerto Rico] Boom NET (1.52s)
+socks5://98.170.57.249:4145 # [United States] Cox Communications Inc. (4.28s)
+http://38.51.48.180:999 # [Dominican Republic] Telemarch S.R.L (4.31s)
+socks5://199.102.104.70:4145 # [United States] Performive LLC (0.39s)
+http://200.35.153.56:999 # [Dominican Republic] LAUAM MEGARED TELECOM, S.R.L. (1.54s)
+http://113.212.111.4:8090 # [Bangladesh] City Online Ltd (0.51s)
+http://197.221.240.178:80 # [Zimbabwe] Telone PVT Ltd (1.08s)
+socks4://184.181.178.33:4145 # [United States] Cox Communications Inc. (2.05s)
+socks4://199.66.182.232:4145 # [United States] NET2ATLANTA.COM LLC (0.25s)
+http://160.22.223.11:8097 # [Indonesia] PT Juara Network Tegal (1.6s)

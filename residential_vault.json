@@ -1392,5 +1392,175 @@
     "mobile": false,
     "latency": 1.59,
     "added_at": "2026-11-19 01:07:16 UTC"
+  },
+  {
+    "proxy": "http://102.244.78.61:8088",
+    "host": "102.244.78.61",
+    "port": 8088,
+    "country": "Cameroon",
+    "isp": "Orange CAM INTERNET",
+    "mobile": true,
+    "latency": 0.75,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.118:80",
+    "host": "193.255.128.118",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.36,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://197.221.249.199:80",
+    "host": "197.221.249.199",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 1.11,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "socks4://174.75.211.222:4145",
+    "host": "174.75.211.222",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 3.2,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://103.112.44.197:8085",
+    "host": "103.112.44.197",
+    "port": 8085,
+    "country": "Indonesia",
+    "isp": "PT.Globalnet Multi Data",
+    "mobile": false,
+    "latency": 2.28,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://45.230.168.37:999",
+    "host": "45.230.168.37",
+    "port": 999,
+    "country": "Venezuela",
+    "isp": "Soluciones DCN Network C.A",
+    "mobile": false,
+    "latency": 0.21,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://43.251.205.146:8080",
+    "host": "43.251.205.146",
+    "port": 8080,
+    "country": "Thailand",
+    "isp": "United Information Highway Co., Ltd.",
+    "mobile": false,
+    "latency": 0.72,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://192.203.0.166:999",
+    "host": "192.203.0.166",
+    "port": 999,
+    "country": "Puerto Rico",
+    "isp": "Boom NET",
+    "mobile": false,
+    "latency": 1.52,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "socks5://98.170.57.249:4145",
+    "host": "98.170.57.249",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 4.28,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://38.51.48.180:999",
+    "host": "38.51.48.180",
+    "port": 999,
+    "country": "Dominican Republic",
+    "isp": "Telemarch S.R.L",
+    "mobile": false,
+    "latency": 4.31,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "socks5://199.102.104.70:4145",
+    "host": "199.102.104.70",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Performive LLC",
+    "mobile": false,
+    "latency": 0.39,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://200.35.153.56:999",
+    "host": "200.35.153.56",
+    "port": 999,
+    "country": "Dominican Republic",
+    "isp": "LAUAM MEGARED TELECOM, S.R.L.",
+    "mobile": false,
+    "latency": 1.54,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://113.212.111.4:8090",
+    "host": "113.212.111.4",
+    "port": 8090,
+    "country": "Bangladesh",
+    "isp": "City Online Ltd",
+    "mobile": false,
+    "latency": 0.51,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://197.221.240.178:80",
+    "host": "197.221.240.178",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 1.08,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "socks4://184.181.178.33:4145",
+    "host": "184.181.178.33",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 2.05,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "socks4://199.66.182.232:4145",
+    "host": "199.66.182.232",
+    "port": 4145,
+    "country": "United States",
+    "isp": "NET2ATLANTA.COM LLC",
+    "mobile": false,
+    "latency": 0.25,
+    "added_at": "2026-11-19 10:06:59 UTC"
+  },
+  {
+    "proxy": "http://160.22.223.11:8097",
+    "host": "160.22.223.11",
+    "port": 8097,
+    "country": "Indonesia",
+    "isp": "PT Juara Network Tegal",
+    "mobile": false,
+    "latency": 1.6,
+    "added_at": "2026-11-19 10:06:59 UTC"
   }
 ]
