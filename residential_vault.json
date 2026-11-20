@@ -1630,5 +1630,175 @@
     "mobile": false,
     "latency": 0.43,
     "added_at": "2026-11-20 09:56:21 UTC"
+  },
+  {
+    "proxy": "http://163.227.252.3:8080",
+    "host": "163.227.252.3",
+    "port": 8080,
+    "country": "Indonesia",
+    "isp": "PT DASA INFRA INDONESIA",
+    "mobile": false,
+    "latency": 1.1,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://157.20.208.250:3128",
+    "host": "157.20.208.250",
+    "port": 3128,
+    "country": "Indonesia",
+    "isp": "PT Barokah Sistem Telematika",
+    "mobile": false,
+    "latency": 0.55,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "socks5://91.143.161.163:1080",
+    "host": "91.143.161.163",
+    "port": 1080,
+    "country": "Russia",
+    "isp": "Insys LLC",
+    "mobile": false,
+    "latency": 0.85,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://187.102.219.32:999",
+    "host": "187.102.219.32",
+    "port": 999,
+    "country": "Argentina",
+    "isp": "Cretton Lisandro Maximiliano",
+    "mobile": false,
+    "latency": 1.63,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://84.44.39.159:9090",
+    "host": "84.44.39.159",
+    "port": 9090,
+    "country": "Turkey",
+    "isp": "Vodafone Net Iletisim Hizmetler",
+    "mobile": false,
+    "latency": 3.13,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://145.220.227.2:3128",
+    "host": "145.220.227.2",
+    "port": 3128,
+    "country": "The Netherlands",
+    "isp": "SURFnet III d",
+    "mobile": false,
+    "latency": 0.2,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://160.19.41.36:80",
+    "host": "160.19.41.36",
+    "port": 80,
+    "country": "India",
+    "isp": "ATC INFOCOM SOLUTIONS PVT LTD",
+    "mobile": false,
+    "latency": 2.57,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "socks4://184.182.240.12:4145",
+    "host": "184.182.240.12",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.85,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://45.194.41.70:8080",
+    "host": "45.194.41.70",
+    "port": 8080,
+    "country": "India",
+    "isp": "Real Time Data Services Private Limited",
+    "mobile": false,
+    "latency": 0.47,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "socks5://45.8.88.236:1080",
+    "host": "45.8.88.236",
+    "port": 1080,
+    "country": "Russia",
+    "isp": "Voronezh Telecom LLC",
+    "mobile": false,
+    "latency": 2.38,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://103.63.190.72:8080",
+    "host": "103.63.190.72",
+    "port": 8080,
+    "country": "Cambodia",
+    "isp": "Today Communication Co., Ltd",
+    "mobile": false,
+    "latency": 0.55,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://103.167.15.188:3128",
+    "host": "103.167.15.188",
+    "port": 3128,
+    "country": "Bangladesh",
+    "isp": "NETX",
+    "mobile": false,
+    "latency": 0.86,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.134:80",
+    "host": "193.255.128.134",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.36,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://102.244.78.61:8081",
+    "host": "102.244.78.61",
+    "port": 8081,
+    "country": "Cameroon",
+    "isp": "Orange CAM INTERNET",
+    "mobile": true,
+    "latency": 0.57,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://103.118.47.205:8080",
+    "host": "103.118.47.205",
+    "port": 8080,
+    "country": "Cambodia",
+    "isp": "Today Communication Co., Ltd",
+    "mobile": false,
+    "latency": 0.52,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "socks5://184.178.172.26:4145",
+    "host": "184.178.172.26",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 1.55,
+    "added_at": "2026-11-20 18:30:40 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.205:80",
+    "host": "193.255.128.205",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.45,
+    "added_at": "2026-11-20 18:30:40 UTC"
   }
 ]
