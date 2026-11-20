@@ -1270,5 +1270,245 @@
     "added_at": "2026-11-16 05:43:46 UTC",
     "last_tested": "2026-11-19 23:36:51 UTC",
     "holy_grail": false
+  },
+  {
+    "proxy": "http://41.203.76.166:8080",
+    "host": "41.203.76.166",
+    "port": 8080,
+    "country": "Nigeria",
+    "isp": "Glo1 Enterprisez",
+    "mobile": false,
+    "latency": 2.45,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://223.25.110.77:8090",
+    "host": "223.25.110.77",
+    "port": 8090,
+    "country": "Indonesia",
+    "isp": "SinergiNet",
+    "mobile": false,
+    "latency": 0.39,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "socks5://199.102.107.145:4145",
+    "host": "199.102.107.145",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Performive LLC",
+    "mobile": false,
+    "latency": 0.23,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://38.210.179.8:999",
+    "host": "38.210.179.8",
+    "port": 999,
+    "country": "Mexico",
+    "isp": "Jair Lozano / Intercom Internet",
+    "mobile": false,
+    "latency": 1.2,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.105:80",
+    "host": "193.255.128.105",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.46,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://138.59.10.112:999",
+    "host": "138.59.10.112",
+    "port": 999,
+    "country": "Venezuela",
+    "isp": "Distribuidora Ofic Tech De Venezuela C.A.",
+    "mobile": false,
+    "latency": 0.52,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://168.228.176.12:3139",
+    "host": "168.228.176.12",
+    "port": 3139,
+    "country": "Brazil",
+    "isp": "BRASILINK SERVI\u00c7OS EIRELI",
+    "mobile": false,
+    "latency": 2.91,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.221:80",
+    "host": "193.255.128.221",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.47,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.68:80",
+    "host": "193.255.128.68",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.46,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "http://182.53.202.238:80",
+    "host": "182.53.202.238",
+    "port": 80,
+    "country": "Thailand",
+    "isp": "TOT Public Company Limited",
+    "mobile": false,
+    "latency": 2.01,
+    "added_at": "2026-11-20 01:48:04 UTC"
+  },
+  {
+    "proxy": "socks5://70.166.65.160:4145",
+    "host": "70.166.65.160",
+    "port": 4145,
+    "country": "United States",
+    "isp": "Cox Communications Inc.",
+    "mobile": false,
+    "latency": 0.75,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://125.25.167.187:80",
+    "host": "125.25.167.187",
+    "port": 80,
+    "country": "Thailand",
+    "isp": "TOT Public Company Limited",
+    "mobile": false,
+    "latency": 2.13,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.7:80",
+    "host": "193.255.128.7",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.45,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://41.220.128.10:80",
+    "host": "41.220.128.10",
+    "port": 80,
+    "country": "Tanzania",
+    "isp": "Habari Node Ltd",
+    "mobile": false,
+    "latency": 0.63,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://213.131.85.28:1981",
+    "host": "213.131.85.28",
+    "port": 1981,
+    "country": "Egypt",
+    "isp": "Link Egypt (Link.NET)",
+    "mobile": false,
+    "latency": 0.44,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.90:80",
+    "host": "193.255.128.90",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.45,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "socks5://202.91.41.102:1080",
+    "host": "202.91.41.102",
+    "port": 1080,
+    "country": "Bangladesh",
+    "isp": "City Online Ltd",
+    "mobile": false,
+    "latency": 0.84,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://45.220.22.245:8080",
+    "host": "45.220.22.245",
+    "port": 8080,
+    "country": "South Africa",
+    "isp": "Level",
+    "mobile": false,
+    "latency": 2.7,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://186.216.51.176:8080",
+    "host": "186.216.51.176",
+    "port": 8080,
+    "country": "Brazil",
+    "isp": "Metroflex Telecomunicacoes Ltda",
+    "mobile": false,
+    "latency": 4.7,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://124.83.126.61:8085",
+    "host": "124.83.126.61",
+    "port": 8085,
+    "country": "Philippines",
+    "isp": "Philippine Long Distance Telephone Co.",
+    "mobile": false,
+    "latency": 0.43,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.254:80",
+    "host": "193.255.128.254",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 0.47,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://193.255.128.59:80",
+    "host": "193.255.128.59",
+    "port": 80,
+    "country": "T\u00fcrkiye",
+    "isp": "National Academic Network and Information Center",
+    "mobile": false,
+    "latency": 2.53,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://197.221.234.149:80",
+    "host": "197.221.234.149",
+    "port": 80,
+    "country": "Zimbabwe",
+    "isp": "Telone PVT Ltd",
+    "mobile": false,
+    "latency": 0.6,
+    "added_at": "2026-11-20 01:50:05 UTC"
+  },
+  {
+    "proxy": "http://103.69.59.38:3128",
+    "host": "103.69.59.38",
+    "port": 3128,
+    "country": "Bangladesh",
+    "isp": "MD ABDUR RAHMAN SAHIN",
+    "mobile": false,
+    "latency": 0.91,
+    "added_at": "2026-11-20 01:50:05 UTC"
   }
 ]
