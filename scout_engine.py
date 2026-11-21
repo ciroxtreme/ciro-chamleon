@@ -1,24 +1,9 @@
-import urllib.request
-import json
-import time
-import socket
 import concurrent.futures
-import os
-import sys
+import json
+import urllib.request
 
-try:
-    import socks
-    from sockshandler import SocksiPyHandler
-    HAS_SOCKS = True
-except ImportError:
-    HAS_SOCKS = False
-
-VAULT_FILE = "residential_vault.txt"
-JSON_VAULT_FILE = "residential_vault.json"
-
-print("🦎 [CIRO CHAMLEON - MASS SCANNER ULTRA] Mengunduh dari Seluruh Repo Dunia...")
-if HAS_SOCKS:
-    print("⚡ Dukungan SOCKS4 & SOCKS5 aktif (via PySocks)!")
+import chamleon_core as core
+from retest_engine import retest
 
 # 35+ SUMBER REPO PROXY DUNIA (TERMASUK ROOSTERKID & CASPER-TECH)
 SOURCES_TXT = [
@@ -55,9 +40,6 @@ SOURCES_TXT = [
     # Repo Utama:
     "https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/all.txt",
     "https://raw.githubusercontent.com/solproxy/sol-free-proxy-list/main/http.txt",
-    "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/http.txt",
-    "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/socks5.txt",
-    "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/socks4.txt",
     "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/all.txt",
     "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt",
     "https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt"
@@ -68,191 +50,80 @@ SOURCES_JSON = [
     "https://raw.githubusercontent.com/Casper-Tech-ke/casper-free-proxies/main/files/proxies.json"
 ]
 
-DC_KEYWORDS = [
-    "hosting", "cloud", "server", "vps", "datacenter", "digitalocean",
-    "ovh", "hetzner", "amazon", "aws", "google", "alibaba", "linode",
-    "choopa", "m247", "leaseweb", "contabo", "oracle", "microsoft", "azure"
-]
 
-# 1. BACA PENYIMPANAN BRANKAS YANG SUDAH ADA (ANTI-DUPLIKAT)
-existing_proxies = set()
-existing_data = []
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        return resp.read().decode("utf-8", errors="ignore")
 
-if os.path.exists(JSON_VAULT_FILE):
-    try:
-        with open(JSON_VAULT_FILE, "r") as f:
-            existing_data = json.load(f)
-            for item in existing_data:
-                existing_proxies.add(item.get("proxy"))
-    except Exception as e:
-        print("Warning read json vault:", e)
 
-print(f"🏦 [PENYIMPANAN SAAT INI] Sudah tersimpan {len(existing_proxies)} proxy unik di brankas.")
+def collect_candidates(known):
+    candidates = set()
+    for url in SOURCES_TXT:
+        try:
+            for line in fetch(url).splitlines():
+                p = core.normalize(line)
+                if p and p not in known:
+                    candidates.add(p)
+        except Exception as e:
+            print(f"⚠️  Sumber gagal: {url} ({e})")
+    for url in SOURCES_JSON:
+        try:
+            for raw in json.loads(fetch(url)).get("proxies", []):
+                p = core.normalize(raw)
+                if p and p not in known:
+                    candidates.add(p)
+        except Exception as e:
+            print(f"⚠️  Sumber gagal: {url} ({e})")
+    return candidates
 
-# 2. AMBIL SEMUA PROXY BARU
-raw_candidates = set()
 
-# A. Unduh sumber TXT
-for s in SOURCES_TXT:
-    try:
-        req = urllib.request.Request(s, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            lines = resp.read().decode("utf-8", errors="ignore").splitlines()
-            for line in lines:
-                l = line.strip()
-                if l and not l.startswith("#"):
-                    if "://" not in l:
-                        l = "http://" + l
-                    if l not in existing_proxies:
-                        raw_candidates.add(l)
-    except Exception:
-        pass
+def scan(candidates, runner_ip):
+    print(f"⚡ [Tahap 1] Cek port TCP {len(candidates)} kandidat...")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=300) as ex:
+        open_ports = [p for p, ok in zip(candidates, ex.map(core.tcp_open, candidates)) if ok]
+    print(f"🔌 Port terbuka: {len(open_ports)}")
 
-# B. Unduh sumber JSON (Casper-Tech)
-for s in SOURCES_JSON:
-    try:
-        req = urllib.request.Request(s, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            pxs = data.get("proxies", [])
-            for p in pxs:
-                p = p.strip()
-                if p:
-                    if "://" not in p:
-                        p = "http://" + p
-                    if p not in existing_proxies:
-                        raw_candidates.add(p)
-    except Exception:
-        pass
+    print(f"🔐 [Tahap 2] Uji HTTPS {core.ROUNDS}x per proxy (harus lolos {core.MIN_SUCCESS}x)...")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=200) as ex:
+        results = list(ex.map(lambda p: core.probe(p, runner_ip), open_ports))
+    working = [(p, r) for p, r in zip(open_ports, results) if r]
+    print(f"🟢 Lolos HTTPS & stabil: {len(working)}")
 
-print(f"📦 Total target baru dari 35+ sumber: {len(raw_candidates)} node.")
+    print("🔍 [Tahap 3] Cek ISP dari exit IP (ip-api batch)...")
+    info = core.lookup_ips(ip for _, r in working for ip in r["exit_ips"])
+    found = []
+    for proxy, res in working:
+        if core.classify(res, info) != "residential":
+            continue
+        meta = info[res["exit_ip"]]
+        node = {"proxy": proxy, **res,
+                "country": meta.get("country"), "isp": meta.get("isp"), "asn": meta.get("as"),
+                "mobile": meta.get("mobile"), "added_at": core.now_utc(),
+                "last_ok": core.now_utc(), "fail_streak": 0, "holy_grail": False}
+        found.append(node)
+        print(f"💎 [BARU] {proxy} | exit {res['exit_ip']} | {node['country']} | {node['isp']} | {res['latency']}s")
+    return found
 
-def parse_node(url_str):
-    proto = "http"
-    clean = url_str
-    if "://" in url_str:
-        proto, clean = url_str.split("://", 1)
-    parts = clean.split(":")
-    return proto, parts[0], int(parts[1])
 
-# Tahap 1: Tes TCP Connect & Transmisi Payload Nyata
-def test_tcp_alive(cand):
-    try:
-        proto, host, port = parse_node(cand)
-        if host.startswith("10.") or host.startswith("192.168.") or host.startswith("127."):
-            return None
-        
-        # 1. Cek port connect
-        t0 = time.time()
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.settimeout(2.0)
-        res = s.connect_ex((host, port))
-        s.close()
-        if res != 0:
-            return None
-            
-        # 2. Uji transmisi payload nyata ke Cloudflare trace (kecepatan & anti-blokir)
-        t1 = time.time()
-        if proto == "socks5":
-            if not HAS_SOCKS:
-                return None
-            opener = urllib.request.build_opener(SocksiPyHandler(socks.SOCKS5, host, port))
-        elif proto == "socks4":
-            if not HAS_SOCKS:
-                return None
-            opener = urllib.request.build_opener(SocksiPyHandler(socks.SOCKS4, host, port))
-        else:
-            handler = urllib.request.ProxyHandler({'http': cand, 'https': cand})
-            opener = urllib.request.build_opener(handler)
+def main():
+    runner_ip = core.get_runner_ip()
+    print(f"🛰️  IP runner: {runner_ip}")
+    vault = core.load_vault()
+    print(f"🏦 Vault saat ini: {len(vault)} node")
 
-        opener.addheaders = [('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)')]
-        with opener.open('http://cloudflare.com/cdn-cgi/trace', timeout=2.5) as r_http:
-            content = r_http.read().decode('utf-8', errors='ignore')
-            if 'colo=' in content or 'ip=' in content:
-                dt = round(time.time() - t1, 2)
-                return (cand, host, port, proto, dt)
-    except Exception:
-        pass
-    return None
+    vault = retest(vault, runner_ip) if vault else []
+    known = {n["proxy"] for n in vault}
 
-all_pool = list(raw_candidates)
-print(f"⚡ [Tahap 1] Memindai {len(all_pool)} kandidat baru dengan 200 THREAD PARALEL...")
+    candidates = sorted(collect_candidates(known))
+    print(f"📦 Kandidat baru: {len(candidates)}")
+    new_nodes = scan(candidates, runner_ip)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=30) as ex:
+        for node, ok in zip(new_nodes, ex.map(lambda n: core.check_holy_grail(n["proxy"]), new_nodes)):
+            node["holy_grail"] = ok
 
-live_nodes = []
-with concurrent.futures.ThreadPoolExecutor(max_workers=200) as executor:
-    results = executor.map(test_tcp_alive, all_pool)
-    for r in results:
-        if r:
-            live_nodes.append(r)
+    core.save_vault(vault + new_nodes)
 
-print(f"🟢 [Tahap 1 Selesai] Ditemukan {len(live_nodes)} node aktif merespon TCP!")
 
-# Tahap 2: Verifikasi ASN Residential Murni
-def check_asn(node_item):
-    cand, host, port, proto, latency = node_item
-    try:
-        req = urllib.request.Request(
-            f"http://ip-api.com/json/{host}?fields=status,country,isp,org,as,hosting,mobile",
-            headers={"User-Agent": "curl/7.68.0"}
-        )
-        with urllib.request.urlopen(req, timeout=3) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("status") != "success":
-                return None
-            
-            is_dc = data.get("hosting", False)
-            info_str = f"{data.get('isp','')} {data.get('org','')} {data.get('as','')}".lower()
-            for kw in DC_KEYWORDS:
-                if kw in info_str:
-                    is_dc = True
-                    break
-            
-            if not is_dc:
-                return {
-                    "proxy": cand,
-                    "host": host,
-                    "port": port,
-                    "country": data.get("country"),
-                    "isp": data.get("isp"),
-                    "mobile": data.get("mobile"),
-                    "latency": latency,
-                    "added_at": time.strftime("%Y-%m-%d %H:%M:%S UTC")
-                }
-    except Exception:
-        pass
-    return None
-
-print(f"🔍 [Tahap 2] Memverifikasi ASN Residential ISP...")
-newly_found = []
-with concurrent.futures.ThreadPoolExecutor(max_workers=30) as executor:
-    results = executor.map(check_asn, live_nodes)
-    for r in results:
-        if r:
-            newly_found.append(r)
-            print(f"💎 [BARU!] {r['proxy']} | {r['country']} | {r['isp']} | {r['latency']}s")
-
-print(f"\n🎉 HASIL PUTARAN INI:")
-print(f"• Node Baru Ditemukan: {len(newly_found)}")
-
-# 3. GABUNGKAN KE PENYIMPANAN LAMA (AKUMULASI ANTI-DUPLIKAT)
-for item in newly_found:
-    if item["proxy"] not in existing_proxies:
-        existing_data.append(item)
-        existing_proxies.add(item["proxy"])
-
-total_saved = len(existing_data)
-print(f"🏦 TOTAL TABUNGAN DI PENYIMPANAN SAAT INI: {total_saved} PROXY RESIDENTIAL!")
-
-with open(JSON_VAULT_FILE, "w") as f:
-    json.dump(existing_data, f, indent=2)
-
-with open(VAULT_FILE, "w") as f:
-    f.write(f"# ========================================================\n")
-    f.write(f"# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)\n")
-    f.write(f"# Total Akumulasi: {total_saved} Proxies Unik (Anti-Duplikat)\n")
-    f.write(f"# Terakhir Diperbarui: {time.strftime('%Y-%m-%d %H:%M:%S UTC')}\n")
-    f.write(f"# ========================================================\n\n")
-    for r in existing_data:
-        f.write(f"{r['proxy']} # [{r.get('country')}] {r.get('isp')} ({r.get('latency')}s)\n")
-
-print(f"💾 File {VAULT_FILE} & {JSON_VAULT_FILE} berhasil diperbarui di repositori!")
+if __name__ == "__main__":
+    main()

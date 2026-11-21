@@ -6,16 +6,21 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: 'Pilih aksi: scan (tambah baru) atau retest (uji & bersihkan brankas)'
+        description: 'scan (uji ulang vault + cari proxy baru) atau retest (uji ulang vault saja)'
         required: false
         default: 'scan'
 
 permissions:
   contents: write
 
+concurrency:
+  group: chamleon-telemetry
+  cancel-in-progress: false
+
 jobs:
   telemetry:
     runs-on: ubuntu-latest
+    timeout-minutes: 55
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -25,17 +30,14 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install Network & SOCKS Dependencies
-        run: |
-          pip install --quiet PySocks urllib3 curl_cffi
+      - name: Install Dependencies
+        run: pip install --quiet curl_cffi
 
       - name: Run Selected Engine
         run: |
           if [ "${{ github.event.inputs.action }}" = "retest" ]; then
-            echo "🩺 Menjalankan Re-test Engine (Multi-Protocol HTTP/SOCKS)..."
             python retest_engine.py
           else
-            echo "🦎 Menjalankan Mass Telemetry Scanner..."
             python scout_engine.py
           fi
 
@@ -43,6 +45,7 @@ jobs:
         run: |
           git config --global user.name "Ciro Chamleon Bot"
           git config --global user.email "chamleon@ciroxtreme.internal"
-          git add residential_vault.txt residential_vault.json || true
-          git commit -m "chore: telemetry synchronization [skip ci]" || true
-          git push origin main || true
+          git add residential_vault.txt residential_vault.json usable/
+          git commit -m "chore: telemetry synchronization [skip ci]" || exit 0
+          git pull --rebase -X theirs origin main
+          git push origin main
