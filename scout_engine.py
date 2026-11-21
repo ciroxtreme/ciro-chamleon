@@ -91,12 +91,12 @@ def scan(candidates, runner_ip):
     print(f"🟢 Lolos HTTPS & stabil: {len(working)}")
 
     print("🔍 [Tahap 3] Cek ISP dari exit IP (ip-api batch)...")
-    info = core.lookup_ips(r["exit_ip"] for _, r in working)
+    info = core.lookup_ips(ip for _, r in working for ip in r["exit_ips"])
     found = []
     for proxy, res in working:
-        meta = info.get(res["exit_ip"])
-        if not core.is_residential(meta):
+        if core.classify(res, info) != "residential":
             continue
+        meta = info[res["exit_ip"]]
         node = {"proxy": proxy, **res,
                 "country": meta.get("country"), "isp": meta.get("isp"), "asn": meta.get("as"),
                 "mobile": meta.get("mobile"), "added_at": core.now_utc(),

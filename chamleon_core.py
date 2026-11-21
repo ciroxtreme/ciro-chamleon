@@ -134,6 +134,7 @@ def probe(proxy, runner_ip, rounds=ROUNDS, min_success=MIN_SUCCESS):
         return None
     return {
         "exit_ip": sorted(exit_ips)[0],
+        "exit_ips": sorted(exit_ips),
         "rotating": len(exit_ips) > 1,
         "latency": latency,
         "success_rate": round(len(latencies) / rounds, 2),
@@ -175,6 +176,14 @@ def is_residential(info):
         return False
     text = f"{info.get('isp', '')} {info.get('org', '')} {info.get('as', '')}".lower()
     return not any(kw in text for kw in DC_KEYWORDS)
+
+
+def classify(res, info):
+    """'residential' only if every observed exit IP is residential; 'unknown' if any lookup is missing."""
+    metas = [info.get(ip) for ip in res["exit_ips"]]
+    if any(m is None for m in metas):
+        return "unknown"
+    return "residential" if all(is_residential(m) for m in metas) else "datacenter"
 
 
 def check_holy_grail(proxy):
