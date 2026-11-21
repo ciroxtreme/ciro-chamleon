@@ -1,20 +1,11 @@
 # ========================================================
-# CIRO CHAMLEON - MULTI-TIER RESIDENTIAL VAULT
-# Total Bersih: 126 Proxies | Terakhir Uji: 2026-11-21 07:30:03 UTC
-# Mendukung: HTTP, HTTPS, SOCKS4, SOCKS5
+# CIRO CHAMLEON - RESIDENTIAL VAULT STORAGE (ULTRA SOURCES)
+# Total Akumulasi: 164 Proxies Unik (Anti-Duplikat)
+# Terakhir Diperbarui: 2026-11-21 08:12:19 UTC
 # ========================================================
 
-# --------------------------------------------------------
-# 🌟 TIER 1: THE HOLY GRAIL (2 IP)
-# Lolos WAF Cloudflare / StockX (Bebas Dosa & Anti-Challenge)
-# --------------------------------------------------------
-http://145.220.227.2:3128 # [The Netherlands] SURFnet III d (0.23s) [HOLY_GRAIL]
-http://145.220.227.67:8080 # [The Netherlands] SURFnet III d (0.24s) [HOLY_GRAIL]
-
-# --------------------------------------------------------
-# 🟢 TIER 2: ACTIVE WARRIORS (124 IP)
-# Kencang & Responsif (< 2.5s) - Sangat Cocok untuk Regular Scraping
-# --------------------------------------------------------
+http://145.220.227.2:3128 # [The Netherlands] SURFnet III d (0.23s)
+http://145.220.227.67:8080 # [The Netherlands] SURFnet III d (0.24s)
 socks4://68.71.242.118:4145 # [United States] Performive LLC (0.23s)
 socks4://68.71.249.153:48606 # [United States] Performive LLC (0.23s)
 http://46.35.9.110:80 # [France] Societe Francaise Du Radiotelephone - SFR SA (0.24s)
@@ -139,3 +130,41 @@ socks5://72.195.34.59:4145 # [United States] Cox Communications Inc. (3.27s)
 socks5://70.166.65.160:4145 # [United States] Cox Communications Inc. (3.45s)
 socks4://70.166.167.38:57728 # [United States] Cox Communications Inc. (3.59s)
 socks4://174.75.211.193:4145 # [United States] Cox Communications Inc. (3.82s)
+http://102.244.78.61:8089 # [Cameroon] Orange CAM INTERNET (0.65s)
+http://111.118.149.40:8080 # [Cambodia] VIETTEL (CAMBODIA) PTE., LTD (3.63s)
+http://193.255.128.213:80 # [Türkiye] National Academic Network and Information Center (0.39s)
+socks5://184.181.217.213:4145 # [United States] Cox Communications Inc. (1.35s)
+http://201.77.108.25:999 # [Mexico] Raul Duarte Urita (1.57s)
+http://1.4.141.40:80 # [Thailand] TOT Public Company Limited (0.52s)
+http://165.99.192.105:1111 # [Indonesia] PT IDN NUSANTARA NETWORK (0.44s)
+http://193.255.128.124:80 # [Türkiye] National Academic Network and Information Center (0.4s)
+http://93.171.157.249:8080 # [Russia] Vikscom Ltd. (0.53s)
+http://193.255.128.54:80 # [Türkiye] National Academic Network and Information Center (0.4s)
+socks4://184.181.217.201:4145 # [United States] Cox Communications Inc. (2.04s)
+http://45.171.129.21:8080 # [Brazil] Stok Info Telecom Ltda-me (2.34s)
+http://182.52.113.71:80 # [Thailand] TOT Public Company Limited (1.44s)
+http://193.255.128.209:80 # [Türkiye] National Academic Network and Information Center (0.41s)
+http://193.255.128.18:80 # [Türkiye] National Academic Network and Information Center (0.4s)
+socks5://184.178.172.13:15311 # [United States] Cox Communications Inc. (3.28s)
+http://103.160.202.174:3125 # [Indonesia] PT Sembilan Mediadata Nusaraya (1.85s)
+socks5://174.75.211.222:4145 # [United States] Cox Communications Inc. (1.45s)
+http://193.255.128.117:80 # [Türkiye] National Academic Network and Information Center (0.4s)
+http://193.255.128.146:80 # [Türkiye] National Academic Network and Information Center (0.4s)
+http://193.255.128.80:80 # [Türkiye] National Academic Network and Information Center (0.4s)
+http://45.195.104.6:80 # [Colombia] INQTEL (0.29s)
+http://187.102.219.42:999 # [Argentina] Cretton Lisandro Maximiliano (0.42s)
+http://193.255.128.160:80 # [Türkiye] National Academic Network and Information Center (0.41s)
+http://118.172.43.253:8080 # [Thailand] TOT Public Company Limited (0.45s)
+http://103.224.65.82:8080 # [Indonesia] BLAMBANGAN (3.39s)
+socks5://184.178.172.11:4145 # [United States] Cox Communications Inc. (1.75s)
+http://193.255.128.232:80 # [Türkiye] National Academic Network and Information Center (0.41s)
+http://191.44.125.13:8080 # [Turkey] High Speed For Internet Services L.L.C (2.31s)
+http://218.252.100.222:80 # [Hong Kong] Hong Kong Cable Television Limited (0.37s)
+http://178.140.3.161:5678 # [Russia] NCNET (0.35s)
+http://180.194.222.21:8000 # [Philippines] Philippine Long Distance Telephone Co. (0.56s)
+http://125.25.167.187:80 # [Thailand] TOT Public Company Limited (1.04s)
+http://193.255.128.180:80 # [Türkiye] National Academic Network and Information Center (0.42s)
+http://41.220.16.219:80 # [Zimbabwe] Telone PVT Ltd (0.55s)
+http://72.56.73.23:80 # [The Netherlands] Timeweb, LLP (0.28s)
+http://183.110.216.128:8091 # [South Korea] Korea Telecom (0.33s)
+http://103.173.138.225:8080 # [Indonesia] PT Serayu Multi Connection (2.35s)
